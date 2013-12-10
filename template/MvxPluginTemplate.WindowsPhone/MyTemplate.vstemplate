@@ -14,8 +14,8 @@
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="Template.WindowsPhone.csproj" File="Template.WindowsPhone.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="MvxWindowsPhoneTemplate.cs.txt">MvxWindowsPhoneTemplate.cs.txt</ProjectItem>
+    <Project TargetFileName="$safeprojectname$.WindowsPhone.csproj" File="Template.WindowsPhone.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="MvxWindowsPhone$safeprojectname$.cs.txt">MvxWindowsPhoneTemplate.cs.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.cs">Plugin.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">

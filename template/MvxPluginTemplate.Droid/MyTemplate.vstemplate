@@ -14,8 +14,8 @@
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="Template.Droid.csproj" File="Template.Droid.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="MvxDroidTemplate.cs.txt">MvxDroidTemplate.cs.txt</ProjectItem>
+    <Project TargetFileName="$safeprojectname$.Droid.csproj" File="Template.Droid.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="MvxDroid$safeprojectname$.cs.txt">MvxDroidTemplate.cs.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.cs">Plugin.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">

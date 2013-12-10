@@ -14,8 +14,8 @@
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="Template.Mac.csproj" File="Template.Mac.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="MvxMacTemplate.cs.txt">MvxMacTemplate.cs.txt</ProjectItem>
+    <Project TargetFileName="$safeprojectname$.Mac.csproj" File="Template.Mac.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="MvxMac$safeprojectname$.cs.txt">MvxMacTemplate.cs.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.cs">Plugin.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
