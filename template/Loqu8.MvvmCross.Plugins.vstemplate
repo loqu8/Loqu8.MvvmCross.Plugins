@@ -2,19 +2,39 @@
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
         <Name>Loqu8.MvvmCross.Plugins Template</Name>
-        <Description>An example of a Loqu8.MvvmCross.Plugins template</Description>
-        <Icon>Icon.ico</Icon>
+        <Description>A Loqu8.MvvmCross.Plugins template</Description>
+        <Icon></Icon>
         <ProjectType>CSharp</ProjectType>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
-			<SolutionFolder Name="MyTemplate">
-				<ProjectTemplateLink ProjectName="MyTemplate.Core">
-					Core/MyTemplate.vstemplate
-				</ProjectTemplateLink>
-				<ProjectTemplateLink ProjectName="MyTemplate.Wpf">
-					Wpf/MyTemplate.vstemplate
-				</ProjectTemplateLink>
+			<SolutionFolder Name="Plugins">
+				<SolutionFolder Name="$safeprojectname$">
+					<ProjectTemplateLink ProjectName="$safeprojectname$">
+						MvxPluginTemplate/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
+						MvxPluginTemplate.Droid/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.Mac">
+						MvxPluginTemplate.Mac/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.Touch">
+						MvxPluginTemplate.Touch/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsPhone">
+						MvxPluginTemplate.WindowsPhone/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsStore">
+						MvxPluginTemplate.WindowsStore/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.Wpf">
+						MvxPluginTemplate.Wpf/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+					<ProjectTemplateLink ProjectName="$safeprojectname$.XamMac">
+						MvxPluginTemplate.XamMac/MyTemplate.vstemplate
+					</ProjectTemplateLink>
+				</SolutionFolder>
 			</SolutionFolder>
         </ProjectCollection>
     </TemplateContent>
