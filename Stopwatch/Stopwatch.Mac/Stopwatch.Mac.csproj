@@ -7,8 +7,8 @@
     <ProjectGuid>{2A22F028-F3A9-49BB-A216-065CC6A55499}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Stopwatch.Mac</RootNamespace>
-    <AssemblyName>Stopwatch.Mac</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.Mac</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.Mac</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
