@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.Stopwatch.WPF")]
+[assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.Stopwatch.Wpf")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Loqu8.MvvmCross.Plugins.Stopwatch.WPF")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("Loqu8.MvvmCross.Plugins.Stopwatch.Wpf")]
+[assembly: AssemblyCopyright("Copyright ©  2013 Loqu8")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

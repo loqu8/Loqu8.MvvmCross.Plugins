@@ -7,8 +7,8 @@
     <ProjectGuid>{362BC1A7-F06B-4323-83A2-C8D375A0D31F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.WPF</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.WPF</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.Wpf</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.Wpf</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
