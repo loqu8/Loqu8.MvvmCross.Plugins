@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{362BC1A7-F06B-4323-83A2-C8D375A0D31F}</ProjectGuid>
+    <ProjectGuid>{1E7E3586-01F2-4D8C-94A1-8EEC2AC6CEF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.WPF</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.WPF</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Template.Mac</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Template.XamMac</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\bin\Debug\Mvx\Wpf\</OutputPath>
+    <OutputPath>..\..\..\bin\Debug\Mvx\XamMac\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\bin\Release\Mvx\Wpf\</OutputPath>
+    <OutputPath>..\..\..\bin\Release\Mvx\XamMac\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,37 +34,52 @@
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.XamMac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrious.CrossCore.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Cirrious.CrossCore.XamMac, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.XamMac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.XamMac.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.XamMac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.XamMac, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.XamMac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Binding.XamMac.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.XamMac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\MvvmCross.Mac.PortableSupport.3.1.131-beta1\lib\net45\System.Windows.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Stopwatch\Shared Files\MvxStopwatch.cs">
-      <Link>MvxStopwatch.cs</Link>
+    <Compile Include="..\Template.Mac\Plugin.cs">
+      <Link>Plugin.cs</Link>
     </Compile>
-    <Compile Include="Plugin.cs" />
+    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
+      <Link>MvxTemplate.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
-      <Project>{7411ac3c-a723-4ea8-90a7-b46f6a4d96e9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
+    <ProjectReference Include="..\Template\Template.csproj">
+      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Name>Template %28Plugins\Template\Template%29</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Template.Mac\MvxMacTemplate.cs.txt">
+      <Link>MvxMacTemplate.cs.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

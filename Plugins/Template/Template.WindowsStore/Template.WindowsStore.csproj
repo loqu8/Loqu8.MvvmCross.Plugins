@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{625FEC12-FDA6-4568-96B5-9B9CC670C003}</ProjectGuid>
+    <ProjectGuid>{68D0ECA8-24AD-4232-9603-39340A51BEF8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.WindowsStore</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.WindowsStore</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Template.WindowsStore</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Template.WindowsStore</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -101,15 +101,8 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
-      <Project>{7411ac3c-a723-4ea8-90a7-b46f6a4d96e9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\Stopwatch\Shared Files\MvxStopwatch.cs">
-      <Link>MvxStopwatch.cs</Link>
+    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
+      <Link>MvxTemplate.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +123,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\netcore45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Template\Template.csproj">
+      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Name>Template %28Plugins\Template\Template%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MvxWindowsStoreTemplate.cs.txt" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>

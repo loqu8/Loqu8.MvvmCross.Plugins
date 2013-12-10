@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Template.Droid
+{
+    public class MvxMacTemplate : IMvxTemplate
+    {
+        public MvxMacTemplate()
+        {
+        }
+
+        #region ITemplate
+
+        #endregion ITemplate
+    }
+}

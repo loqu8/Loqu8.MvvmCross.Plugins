@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7AC289A7-2BFE-4742-9D13-4F839185AC8D}</ProjectGuid>
+    <ProjectGuid>{01DE61DB-A507-4C80-B176-18F30696BEE7}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.Touch</RootNamespace>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Template.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.Touch</AssemblyName>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Template.Touch</AssemblyName>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -36,8 +36,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Stopwatch\Shared Files\MvxStopwatch.cs">
-      <Link>MvxStopwatch.cs</Link>
+    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
+      <Link>MvxTemplate.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,10 +72,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
-      <Project>{7411ac3c-a723-4ea8-90a7-b46f6a4d96e9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
+    <ProjectReference Include="..\Template\Template.csproj">
+      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Name>Template %28Plugins\Template\Template%29</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MvxTouchTemplate.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F7E68331-7568-453E-90FF-EBC5EB5F7B94}</ProjectGuid>
+    <ProjectGuid>{473A3B13-1E08-473E-9A27-D3C44D6D9B36}</ProjectGuid>
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.WindowsPhone</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.WindowsPhone</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Template.WindowsPhone</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Template.WindowsPhone</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
@@ -85,17 +85,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Stopwatch\Shared Files\MvxStopwatch.cs">
-      <Link>MvxStopwatch.cs</Link>
+    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
+      <Link>MvxTemplate.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
-      <Project>{7411AC3C-A723-4EA8-90A7-B46F6A4D96E9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -113,6 +107,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\wp80\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Template\Template.csproj">
+      <Project>{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}</Project>
+      <Name>Template %28Plugins\Template\Template%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MvxWindowsPhoneTemplate.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

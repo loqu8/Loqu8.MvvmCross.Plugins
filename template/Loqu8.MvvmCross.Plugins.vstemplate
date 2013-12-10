@@ -1,0 +1,21 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Loqu8.MvvmCross.Plugins Template</Name>
+        <Description>An example of a Loqu8.MvvmCross.Plugins template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+			<SolutionFolder Name="MyTemplate">
+				<ProjectTemplateLink ProjectName="MyTemplate.Core">
+					Core/MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="MyTemplate.Wpf">
+					Wpf/MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

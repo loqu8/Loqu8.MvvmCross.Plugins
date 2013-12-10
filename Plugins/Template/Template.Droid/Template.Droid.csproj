@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{206075AF-A14B-4D0A-923E-E026465E1EF0}</ProjectGuid>
+    <ProjectGuid>{D59C8C51-D254-4457-BDE0-9A02D8A619A4}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loqu8.MvvmCross.Plugins.Stopwatch.Droid</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Stopwatch.Droid</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.Template.Droid</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.Template.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -75,9 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Stopwatch\Shared Files\MvxStopwatch.cs">
-      <Link>MvxStopwatch.cs</Link>
+    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
+      <Link>MvxTemplate.cs</Link>
     </Compile>
+    <Content Include="MvxDroidTemplate.cs.txt" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,9 +91,9 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
-      <Project>{7411ac3c-a723-4ea8-90a7-b46f6a4d96e9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
+    <ProjectReference Include="..\Template\Template.csproj">
+      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Name>Template %28Plugins\Template\Template%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
