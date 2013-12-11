@@ -85,8 +85,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
-      <Link>MvxTemplate.cs</Link>
+    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
+      <Link>Mvx$safeprojectname$.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,13 +109,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Template\Template.csproj">
+    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
       <Project>{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}</Project>
-      <Name>Template %28Plugins\Template\Template%29</Name>
+      <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MvxWindowsPhoneTemplate.cs.txt" />
+    <Content Include="MvxWindowsPhone$safeprojectname$.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

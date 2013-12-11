@@ -2,14 +2,14 @@
 
 namespace Loqu8.MvvmCross.Plugins.$safeprojectname$
 {
-    public class MvxTemplate : IMvxTemplate
+    public class Mvx$safeprojectname$ : IMvx$safeprojectname$
     {        
-        public MvxTemplate()
+        public Mvx$safeprojectname$()
         {
         }
 
-        #region ITemplate
+        #region I$safeprojectname$
 
-        #endregion ITemplate
+        #endregion I$safeprojectname$
     }
 }

@@ -36,8 +36,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
-      <Link>MvxTemplate.cs</Link>
+    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
+      <Link>Mvx$safeprojectname$.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,13 +72,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Template\Template.csproj">
+    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
-      <Name>Template %28Plugins\Template\Template%29</Name>
+      <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MvxTouchTemplate.cs.txt" />
+    <Content Include="MvxTouch$safeprojectname$.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

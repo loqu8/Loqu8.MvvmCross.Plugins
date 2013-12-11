@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Loqu8.MvvmCross.Plugins.$safeprojectname$
 {
-    public interface IMvxTemplate
+    public interface IMvx$safeprojectname$
     {
 
     }

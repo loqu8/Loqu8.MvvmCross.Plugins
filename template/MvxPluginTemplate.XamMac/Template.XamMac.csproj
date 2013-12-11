@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>$safeprojectname$</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.Template.XamMac</AssemblyName>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$.XamMac</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -59,11 +59,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Template.Mac\Plugin.cs">
+    <Compile Include="..\$safeprojectname$.Mac\Plugin.cs">
       <Link>Plugin.cs</Link>
     </Compile>
-    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
-      <Link>MvxTemplate.cs</Link>
+    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
+      <Link>Mvx$safeprojectname$.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -71,14 +71,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Template\Template.csproj">
+    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
-      <Name>Template %28Plugins\Template\Template%29</Name>
+      <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Template.Mac\MvxMacTemplate.cs.txt">
-      <Link>MvxMacTemplate.cs.txt</Link>
+    <Content Include="..\$safeprojectname$.Mac\MvxMac$safeprojectname$.cs.txt">
+      <Link>MvxMac$safeprojectname$.cs.txt</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

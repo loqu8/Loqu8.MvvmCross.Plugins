@@ -39,10 +39,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMvxTemplate.cs" />
+    <Compile Include="IMvx$safeprojectname$.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Shared Files\MvxTemplate.cs" />
+    <None Include="Shared Files\Mvx$safeprojectname$.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">

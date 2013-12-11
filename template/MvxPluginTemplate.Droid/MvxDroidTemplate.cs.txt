@@ -2,14 +2,14 @@
 
 namespace Loqu8.MvvmCross.Plugins.$safeprojectname$
 {
-    public class MvxDroidTemplate : IMvxTemplate
+    public class MvxDroid$safeprojectname$ : IMvx$safeprojectname$
     {
-        public MvxDroidTemplate()
+        public MvxDroid$safeprojectname$()
         {
         }
 
-        #region ITemplate
+        #region I$safeprojectname$
 
-        #endregion ITemplate
+        #endregion I$safeprojectname$
     }
 }

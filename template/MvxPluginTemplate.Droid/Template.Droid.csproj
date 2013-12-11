@@ -75,10 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Template\Shared Files\MvxTemplate.cs">
-      <Link>MvxTemplate.cs</Link>
+    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
+      <Link>Mvx$safeprojectname$.cs</Link>
     </Compile>
-    <Content Include="MvxDroidTemplate.cs.txt" />
+    <Content Include="MvxDroid$safeprojectname$.cs.txt" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,9 +91,9 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Template\Template.csproj">
+    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
-      <Name>Template %28Plugins\Template\Template%29</Name>
+      <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
