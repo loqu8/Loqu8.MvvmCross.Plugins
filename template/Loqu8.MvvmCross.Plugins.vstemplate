@@ -5,6 +5,7 @@
         <Description>Loqu8.MvvmCross.Plugins template</Description>
         <Icon></Icon>
         <ProjectType>CSharp</ProjectType>
+		<CreateInPlace>true</CreateInPlace>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>

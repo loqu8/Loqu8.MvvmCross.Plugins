@@ -73,7 +73,7 @@
   <ItemGroup>
     <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
-      <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
+      <Name>$saferootprojectname$ %28$saferootprojectname$\$saferootprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
