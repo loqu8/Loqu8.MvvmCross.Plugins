@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\bin\Debug\Mvx\Wpf\</OutputPath>
+    <OutputPath>$(SolutionDir)\bin\Debug\Mvx\Wpf\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\bin\Release\Mvx\Wpf\</OutputPath>
+    <OutputPath>$(SolutionDir)\bin\Release\Mvx\Wpf\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,15 +34,15 @@
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml.Linq" />

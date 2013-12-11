@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\bin\Debug\Mvx\Droid\</OutputPath>
+    <OutputPath>$(SolutionDir)\bin\Debug\Mvx\Droid\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\bin\Release\Mvx\Droid\</OutputPath>
+    <OutputPath>$(SolutionDir)\bin\Release\Mvx\Droid\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,23 +37,23 @@
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
@@ -61,17 +61,17 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net">
       <Private>True</Private>
-      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.3.1.131-beta1\lib\MonoAndroid\System.Net.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.PortableSupport.3.1.131-beta1\lib\MonoAndroid\System.Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows">
       <Private>True</Private>
-      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.3.1.131-beta1\lib\MonoAndroid\System.Windows.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.PortableSupport.3.1.131-beta1\lib\MonoAndroid\System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Serialization">
       <Private>True</Private>
-      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.3.1.131-beta1\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.PortableSupport.3.1.131-beta1\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
