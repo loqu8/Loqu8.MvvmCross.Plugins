@@ -1,19 +1,26 @@
 ﻿using Microsoft.VisualStudio.TemplateWizard;
 using EnvDTE;
+using EnvDTE80;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 // http://www.develop.com/multiprojectvisualstudiotemplate
+// http://sharp-architecture.googlecode.com/svn/trunk/src/SharpArch/SharpArch.VsSharpArchTemplate/WizardImplementation.cs
 namespace MvxPluginTemplateWizard
 {
     public class RootWizard : IWizard
     {
-        // Use to communicate $saferootprojectname$ to ChildWizard     
+        // Use to communicate $saferootprojectname$ to other Wizards     
         public static Dictionary<string, string> GlobalDictionary =
             new Dictionary<string,string>();
+
+        private DTE2 _dte2;
+        private WizardRunKind _runKind;
+        private Dictionary<string, string> _replacementsDictionary;
 
         // This method is called before opening any item that 
         // has the OpenInEditor attribute.
@@ -32,8 +39,6 @@ namespace MvxPluginTemplateWizard
         {
         }
 
-        private DTE _dte;
-
         // This method is called after the project is created.
         public void RunFinished()
         {
@@ -44,11 +49,22 @@ namespace MvxPluginTemplateWizard
             Dictionary<string, string> replacementsDictionary,
             WizardRunKind runKind, object[] customParams)
         {
-            _dte = automationObject as DTE;
+            _dte2 = automationObject as DTE2;
+            _runKind = runKind;
+            _replacementsDictionary = replacementsDictionary;
 
-            // Place "$saferootprojectname$ in the global dictionary.         
-            // Copy from $safeprojectname$ passed in my root vstemplate         
-            GlobalDictionary["$saferootprojectname$"] = replacementsDictionary["$safeprojectname$"];
+            if (runKind == WizardRunKind.AsMultiProject)    // should be
+            {
+                // Place "$saferootprojectname$ in the global dictionary.         
+                // Copy from $safeprojectname$ passed in my root vstemplate         
+                GlobalDictionary["$saferootprojectname$"] = replacementsDictionary["$safeprojectname$"];
+                
+                var solutionPath = _dte2.Solution.Properties.Item("Path").Value.ToString();
+                var solutionFi = new FileInfo(solutionPath);
+                GlobalDictionary["$solutionpath$"] = solutionPath;
+                GlobalDictionary["$solutionrootpath$"] = solutionFi.Directory.FullName;
+                GlobalDictionary["$solutionname$"] = solutionFi.Name;
+            }
         }
 
         // This method is only called for item templates,
@@ -56,6 +72,6 @@ namespace MvxPluginTemplateWizard
         public bool ShouldAddProjectItem(string filePath)
         {
             return true;
-        }    
+        }
     }
 }
