@@ -14,8 +14,8 @@
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="$safeprojectname$.Touch.csproj" File="Template.Touch.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="MvxTouch$safeprojectname$.cs.txt">MvxTouchTemplate.cs.txt</ProjectItem>
+    <Project TargetFileName="$saferootprojectname$.Touch.csproj" File="Template.Touch.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="MvxTouch$saferootprojectname$.cs.txt">MvxTouchTemplate.cs.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.cs">Plugin.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
@@ -23,4 +23,8 @@
       </Folder>
     </Project>
   </TemplateContent>
+	<WizardExtension>
+		<Assembly>MvxPluginTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a1d66120136bd321</Assembly>
+		<FullClassName>MvxPluginTemplateWizard.ChildWizard</FullClassName>  
+	</WizardExtension>
 </VSTemplate>

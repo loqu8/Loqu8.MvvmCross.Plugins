@@ -15,8 +15,8 @@ namespace Loqu8.MvvmCross.Plugins.$safeprojectname$
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvx$safeprojectname$>(new Mvx$safeprojectname$());
-            //  Mvx.RegisterSingleton<IMvx$safeprojectname$>(new MvxWindowsStore$safeprojectname$());
+            Mvx.RegisterSingleton<IMvx$saferootprojectname$>(new Mvx$saferootprojectname$());
+            //  Mvx.RegisterSingleton<IMvx$saferootprojectname$>(new MvxWindowsStore$saferootprojectname$());
         }
     }
 }

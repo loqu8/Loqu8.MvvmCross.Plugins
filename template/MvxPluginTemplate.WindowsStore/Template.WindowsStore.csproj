@@ -9,8 +9,8 @@
     <ProjectGuid>{68D0ECA8-24AD-4232-9603-39340A51BEF8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>$safeprojectname$</RootNamespace>
-    <AssemblyName>$safeprojectname$</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

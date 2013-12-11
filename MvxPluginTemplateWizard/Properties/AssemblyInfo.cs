@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.$safeprojectname$)]
+[assembly: AssemblyTitle("MvxPluginTemplateWizard")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Loqu8.MvvmCross.Plugins.$safeprojectname$")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("MvxPluginTemplateWizard")]
+[assembly: AssemblyCopyright("Copyright ©  2013 Loqu8")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d370e34a-b917-4710-b325-9f3bb9c779fd")]
+[assembly: Guid("48e959b0-b8e9-43c0-9e35-7d149de87ac3")]
 
 // Version information for an assembly consists of the following four values:
 //

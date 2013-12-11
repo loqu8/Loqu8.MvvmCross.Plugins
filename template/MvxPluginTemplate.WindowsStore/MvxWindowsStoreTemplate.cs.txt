@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace Loqu8.MvvmCross.Plugins.$safeprojectname$.Droid
+namespace Loqu8.MvvmCross.Plugins.$safeprojectname$.
 {
-    public class MvxWindowsStore$safeprojectname$ : IMvx$safeprojectname$
+    public class MvxWindowsStore$saferootprojectname$ : IMvx$saferootprojectname$
     {
-        public MvxWindowsStore$safeprojectname$()
+        public MvxWindowsStore$saferootprojectname$()
         {
         }
 
-        #region I$safeprojectname$
+        #region I$saferootprojectname$
 
-        #endregion I$safeprojectname$
+        #endregion I$saferootprojectname$
     }
 }

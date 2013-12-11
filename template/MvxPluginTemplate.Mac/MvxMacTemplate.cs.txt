@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace Loqu8.MvvmCross.Plugins.$safeprojectname$.Droid
+namespace Loqu8.MvvmCross.Plugins.$safeprojectname$
 {
-    public class MvxMac$safeprojectname$ : IMvx$safeprojectname$
+    public class MvxMac$saferootprojectname$ : IMvx$saferootprojectname$
     {
-        public MvxMac$safeprojectname$()
+        public MvxMac$saferootprojectname$()
         {
         }
 
-        #region I$safeprojectname$
+        #region I$saferootprojectname$
 
-        #endregion I$safeprojectname$
+        #endregion I$saferootprojectname$
     }
 }

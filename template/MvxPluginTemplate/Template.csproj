@@ -8,8 +8,8 @@
     <ProjectGuid>{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>$safeprojectname$</RootNamespace>
-    <AssemblyName>$safeprojectname$</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

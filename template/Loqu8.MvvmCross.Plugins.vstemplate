@@ -1,41 +1,41 @@
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
-        <Name>Loqu8.MvvmCross.Plugins Template</Name>
-        <Description>A Loqu8.MvvmCross.Plugins template</Description>
+        <Name>MvxPluginTemplate</Name>
+        <Description>Loqu8.MvvmCross.Plugins template</Description>
         <Icon></Icon>
         <ProjectType>CSharp</ProjectType>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
-			<SolutionFolder Name="Plugins">
-				<SolutionFolder Name="$safeprojectname$">
-					<ProjectTemplateLink ProjectName="$safeprojectname$">
-						MvxPluginTemplate/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
-						MvxPluginTemplate.Droid/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.Mac">
-						MvxPluginTemplate.Mac/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.Touch">
-						MvxPluginTemplate.Touch/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsPhone">
-						MvxPluginTemplate.WindowsPhone/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsStore">
-						MvxPluginTemplate.WindowsStore/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.Wpf">
-						MvxPluginTemplate.Wpf/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-					<ProjectTemplateLink ProjectName="$safeprojectname$.XamMac">
-						MvxPluginTemplate.XamMac/MyTemplate.vstemplate
-					</ProjectTemplateLink>
-				</SolutionFolder>
-			</SolutionFolder>
+			<ProjectTemplateLink ProjectName="$safeprojectname$">
+				MvxPluginTemplate/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
+				MvxPluginTemplate.Droid/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.Mac">
+				MvxPluginTemplate.Mac/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.Touch">
+				MvxPluginTemplate.Touch/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsPhone">
+				MvxPluginTemplate.WindowsPhone/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsStore">
+				MvxPluginTemplate.WindowsStore/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.Wpf">
+				MvxPluginTemplate.Wpf/MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.XamMac">
+				MvxPluginTemplate.XamMac/MyTemplate.vstemplate
+			</ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
+	<WizardExtension>
+		<Assembly>MvxPluginTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a1d66120136bd321</Assembly>
+		<FullClassName>MvxPluginTemplateWizard.RootWizard</FullClassName>  
+	</WizardExtension>
 </VSTemplate>

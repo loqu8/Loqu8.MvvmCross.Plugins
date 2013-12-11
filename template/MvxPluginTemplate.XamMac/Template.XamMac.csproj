@@ -7,8 +7,8 @@
     <ProjectGuid>{1E7E3586-01F2-4D8C-94A1-8EEC2AC6CEF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>$safeprojectname$</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$.XamMac</AssemblyName>
+    <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>

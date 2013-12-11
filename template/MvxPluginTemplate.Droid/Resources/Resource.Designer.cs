@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Loqu8.MvvmCross.Plugins.$safeprojectname$.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Loqu8.MvvmCross.Plugins.$saferootprojectname$.Resource", IsApplication=false)]
 
 namespace Loqu8.MvvmCross.Plugins.$safeprojectname$
 {
