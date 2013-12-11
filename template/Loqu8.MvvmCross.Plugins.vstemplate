@@ -9,30 +9,30 @@
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
-			<ProjectTemplateLink ProjectName="$safeprojectname$">
-				MvxPluginTemplate/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
-				MvxPluginTemplate.Droid/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.Mac">
-				MvxPluginTemplate.Mac/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.Touch">
-				MvxPluginTemplate.Touch/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsPhone">
-				MvxPluginTemplate.WindowsPhone/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.WindowsStore">
-				MvxPluginTemplate.WindowsStore/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.Wpf">
-				MvxPluginTemplate.Wpf/MyTemplate.vstemplate
-			</ProjectTemplateLink>
-			<ProjectTemplateLink ProjectName="$safeprojectname$.XamMac">
-				MvxPluginTemplate.XamMac/MyTemplate.vstemplate
-			</ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$">
+				    MvxPluginTemplate/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
+				    MvxPluginTemplate.Droid/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.Mac">
+				    MvxPluginTemplate.Mac/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.Touch">
+				    MvxPluginTemplate.Touch/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.WindowsPhone">
+				    MvxPluginTemplate.WindowsPhone/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.WindowsStore">
+				    MvxPluginTemplate.WindowsStore/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.Wpf">
+				    MvxPluginTemplate.Wpf/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
+			    <ProjectTemplateLink ProjectName="$safeprojectname$.XamMac">
+				    MvxPluginTemplate.XamMac/MyTemplate.vstemplate
+			    </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
 	<WizardExtension>

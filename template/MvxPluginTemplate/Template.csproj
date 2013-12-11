@@ -43,6 +43,12 @@
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Shared Files\Mvx$saferootprojectname$.cs" />
+    <None Include="nuspec\Loqu8.MvvmCross.Mac.Plugins.$saferootprojectname$.3.1.1.nuspec" />
+    <None Include="nuspec\Loqu8.MvvmCross.Plugins.$saferootprojectname$.3.1.1.nuspec" />
+    <None Include="nuspec\Loqu8.MvvmCross.XamMac.Plugins.$saferootprojectname$.3.1.1.nuspec" />
+    <None Include="nuspec\BootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
+    <None Include="nuspec\MacBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
+    <None Include="nuspec\XamMacBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">

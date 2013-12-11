@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Loqu8.MvvmCross.Mac.Plugins.$saferootprojectname$</id>
+		<version>3.1.1-beta1</version>
+		<title>MvvmCross - Mac $saferootprojectname$ Plugin</title>
+		<authors>E. Timothy Uy</authors>
+		<owners>Loqu8</owners>
+		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+		<projectUrl>https://github.com/loqu8/Loqu8.MvvmCross.Plugins</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Everyone needs a $saferootprojectname$...</description>
+		<tags>mvvm mvvmcross xamarin monodroid monotouch mac</tags>
+		<dependencies>
+		  <dependency id="MvvmCross.HotTuna.Mac.CrossCore" version="3.1.1-beta1" />
+		</dependencies>
+	</metadata>
+	<files>		
+		<!-- PCL -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" target="lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" />
+
+		<!-- mac -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" />
+		<file src="..\bin\Release\Mvx\Mac\Loqu8.MvvmCross.Plugins.$saferootprojectname$.Mac.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.$saferootprojectname$.Mac.dll" />
+        <file src="MacBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" target="content\net45\Bootstrap\$saferootprojectname$PluginBootstrap.cs.pp" />
+			
+		<!-- droid -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" />
+		<file src="..\bin\Release\Mvx\Droid\Loqu8.MvvmCross.Plugins.$saferootprojectname$.Droid.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.$saferootprojectname$.Droid.dll" />
+        <file src="BootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\$saferootprojectname$PluginBootstrap.cs.pp" />
+
+		<!-- touch -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.$saferootprojectname$.dll" />
+		<file src="..\bin\Release\Mvx\Touch\Loqu8.MvvmCross.Plugins.$saferootprojectname$.Touch.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.$saferootprojectname$.Touch.dll" />
+        <file src="TouchBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\$saferootprojectname$PluginBootstrap.cs.pp" />
+			
+	</files>
+</package>

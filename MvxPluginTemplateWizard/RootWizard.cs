@@ -32,6 +32,8 @@ namespace MvxPluginTemplateWizard
         {
         }
 
+        private DTE _dte;
+
         // This method is called after the project is created.
         public void RunFinished()
         {
@@ -42,6 +44,8 @@ namespace MvxPluginTemplateWizard
             Dictionary<string, string> replacementsDictionary,
             WizardRunKind runKind, object[] customParams)
         {
+            _dte = automationObject as DTE;
+
             // Place "$saferootprojectname$ in the global dictionary.         
             // Copy from $safeprojectname$ passed in my root vstemplate         
             GlobalDictionary["$saferootprojectname$"] = replacementsDictionary["$safeprojectname$"];
