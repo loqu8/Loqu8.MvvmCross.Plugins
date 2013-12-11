@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -75,10 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
-      <Link>Mvx$safeprojectname$.cs</Link>
+    <Compile Include="..\$saferootprojectname$\Shared Files\Mvx$saferootprojectname$.cs">
+      <Link>Mvx$saferootprojectname$.cs</Link>
     </Compile>
-    <Content Include="MvxDroid$safeprojectname$.cs.txt" />
+    <Content Include="MvxDroid$saferootprojectname$.cs.txt" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,7 +91,7 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
+    <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
       <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>

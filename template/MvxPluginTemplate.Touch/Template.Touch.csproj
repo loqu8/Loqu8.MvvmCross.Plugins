@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$</AssemblyName>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -36,8 +36,8 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
-      <Link>Mvx$safeprojectname$.cs</Link>
+    <Compile Include="..\$saferootprojectname$\Shared Files\Mvx$saferootprojectname$.cs">
+      <Link>Mvx$saferootprojectname$.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,13 +72,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
+    <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
       <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MvxTouch$safeprojectname$.cs.txt" />
+    <Content Include="MvxTouch$saferootprojectname$.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
@@ -85,8 +85,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
-      <Link>Mvx$safeprojectname$.cs</Link>
+    <Compile Include="..\$saferootprojectname$\Shared Files\Mvx$saferootprojectname$.cs">
+      <Link>Mvx$saferootprojectname$.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,13 +109,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
+    <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
       <Project>{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}</Project>
       <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MvxWindowsPhone$safeprojectname$.cs.txt" />
+    <Content Include="MvxWindowsPhone$saferootprojectname$.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

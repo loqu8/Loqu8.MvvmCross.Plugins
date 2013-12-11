@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
-    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$<AssemblyName>
+    <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -101,8 +101,8 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\$safeprojectname$\Shared Files\Mvx$safeprojectname$.cs">
-      <Link>Mvx$safeprojectname$.cs</Link>
+    <Compile Include="..\$saferootprojectname$\Shared Files\Mvx$saferootprojectname$.cs">
+      <Link>Mvx$saferootprojectname$.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,13 +125,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$safeprojectname$\$safeprojectname$.csproj">
+    <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
       <Name>$safeprojectname$ %28Plugins\$safeprojectname$\$safeprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MvxWindowsStore$safeprojectname$.cs.txt" />
+    <Content Include="MvxWindowsStore$saferootprojectname$.cs.txt" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
