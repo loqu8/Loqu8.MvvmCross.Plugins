@@ -30,8 +30,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch.Wpf", "Plugins\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvxPluginTemplateWizard", "MvxPluginTemplateWizard\MvxPluginTemplateWizard.csproj", "{72069854-3C43-4FB8-8C7E-19FD4B9A980E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvxPluginTemplateVisx", "MvxPluginTemplateVisx\MvxPluginTemplateVisx.csproj", "{189976C3-FE3F-4A16-9F79-0B87E4773AD3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,16 +142,6 @@ Global
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|ARM.ActiveCfg = Release|Any CPU
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|x64.ActiveCfg = Release|Any CPU
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|x86.ActiveCfg = Release|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Release|ARM.ActiveCfg = Release|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Release|x64.ActiveCfg = Release|Any CPU
-		{189976C3-FE3F-4A16-9F79-0B87E4773AD3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EnvDTE80;
 using System.IO;
+using System.Diagnostics;
 
 namespace MvxPluginTemplateWizard
 {
@@ -32,7 +33,25 @@ namespace MvxPluginTemplateWizard
                 var nuspecPath = Path.Combine(projectFi.Directory.FullName, "nuspec");
                 var targetPath = Path.Combine(RootWizard.GlobalDictionary["$solutionrootpath$"], "nuspec");                
                 MoveDirectory(nuspecPath, targetPath);
-            }
+
+                // replaces Project nuspec with links
+                foreach (ProjectItem item in project.ProjectItems)
+                {
+                    try
+                    {
+                        Debug.WriteLine(item.Name);
+
+                        if (item.Name == "nuspec")
+                        {
+                            item.Delete();
+                            break;
+                        }
+                    }
+                    catch (Exception ex) {
+                        Debug.WriteLine(ex.Message);
+                    } 
+                }
+            }            
         }
 
         public static void MoveDirectory(string source, string target)
