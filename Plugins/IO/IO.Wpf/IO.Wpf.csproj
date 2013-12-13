@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>$(SolutionDir)\bin\Debug\Mvx\Wpf\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;MVX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -27,7 +27,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>$(SolutionDir)\bin\Release\Mvx\Wpf\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>TRACE;MVX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -45,12 +45,25 @@
       <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.FileSystem.Desktop\DesktopFileSystem.cs">
+      <Link>DesktopFileSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.FileSystem.Desktop\FileSystemFile.cs">
+      <Link>FileSystemFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.FileSystem.Desktop\FileSystemFolder.cs">
+      <Link>FileSystemFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage\Exceptions\PCLStorageExceptions.cs">
+      <Link>Exceptions\PCLStorageExceptions.cs</Link>
+    </Compile>
     <Compile Include="..\IO\Shared Files\MvxPath.cs">
       <Link>MvxPath.cs</Link>
     </Compile>

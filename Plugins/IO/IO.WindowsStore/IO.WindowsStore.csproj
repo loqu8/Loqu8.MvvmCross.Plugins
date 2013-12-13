@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>$(SolutionDir)\bin\Debug\Mvx\WindowsStore\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;MVX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -30,7 +30,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>$(SolutionDir)\bin\Release\Mvx\WindowsStore\</OutputPath>
-    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <DefineConstants>TRACE;NETFX_CORE;MVX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -101,6 +101,18 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WinRT\WinRTFile.cs">
+      <Link>WinRTFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WinRT\WinRTFileSystem.cs">
+      <Link>WinRTFileSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WinRT\WinRTFolder.cs">
+      <Link>WinRTFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage\Exceptions\PCLStorageExceptions.cs">
+      <Link>Exceptions\PCLStorageExceptions.cs</Link>
+    </Compile>
     <Compile Include="..\IO\Shared Files\MvxPath.cs">
       <Link>MvxPath.cs</Link>
     </Compile>

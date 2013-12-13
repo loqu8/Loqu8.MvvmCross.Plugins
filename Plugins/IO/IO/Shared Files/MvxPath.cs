@@ -15,6 +15,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         }
 
         #region MvxBasePath
+#if !NETFX_CORE && !WINDOWS_PHONE
         // Summary:
         //     Provides a platform-specific alternate character used to separate directory
         //     levels in a path string that reflects a hierarchical file system organization.
@@ -22,13 +23,11 @@ namespace Loqu8.MvvmCross.Plugins.IO
         {
             get
             {
-#if NETFX_CORE || WINDOWS_PHONE
-                throw new PlatformNotSupportedException();
-#else
                 return System.IO.Path.AltDirectorySeparatorChar;
-#endif
             }
         }
+#endif
+#if !NETFX_CORE
         //
         // Summary:
         //     Provides a platform-specific character used to separate directory levels
@@ -37,11 +36,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         {
             get
             {
-#if NETFX_CORE
-                throw new PlatformNotSupportedException();
-#else
                 return System.IO.Path.DirectorySeparatorChar;
-#endif
             }
         }
         //
@@ -67,11 +62,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         {
             get
             {
-#if NETFX_CORE
-                throw new PlatformNotSupportedException();
-#else
                 return System.IO.Path.PathSeparator;
-#endif
             }
         }
         //
@@ -81,13 +72,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         {
             get
             {
-#if NETFX_CORE
-                throw new PlatformNotSupportedException();
-#else
                 return System.IO.Path.VolumeSeparatorChar;
-#endif
             }
         }
+#endif
 
         // Summary:
         //     Changes the extension of a path string.
@@ -307,6 +295,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         {
             return GetFileNameWithoutExtension(path);
         }
+#if !NETFX_CORE
         //
         // Summary:
         //     Returns the absolute path for the specified path string.
@@ -341,12 +330,9 @@ namespace Loqu8.MvvmCross.Plugins.IO
         [SecuritySafeCritical]
         public string GetFullPath(string path)
         {
-#if NETFX_CORE
-            throw new PlatformNotSupportedException();
-#else
             return System.IO.Path.GetFullPath(path);
-#endif
         }
+#endif
         //
         // Summary:
         //     Gets an array containing the characters that are not allowed in file names.
@@ -397,6 +383,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         {
             return System.IO.Path.GetRandomFileName();
         }
+#if !NETFX_CORE
         //
         // Summary:
         //     Creates a uniquely named, zero-byte temporary file on disk and returns the
@@ -412,12 +399,9 @@ namespace Loqu8.MvvmCross.Plugins.IO
         [SecuritySafeCritical]
         public string GetTempFileName()
         {
-#if NETFX_CORE
-            throw new PlatformNotSupportedException();
-#else
             return System.IO.Path.GetTempFileName();
-#endif
         }
+#endif
         //
         // Summary:
         //     Returns the path of the current user's temporary folder.

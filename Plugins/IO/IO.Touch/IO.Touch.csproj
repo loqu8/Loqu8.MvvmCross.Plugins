@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>$(SolutionDir)\bin\Debug\Mvx\Touch\</OutputPath>
-    <DefineConstants>DEBUG</DefineConstants>
+    <DefineConstants>DEBUG;__IOS__;__MOBILE__;MVX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -34,8 +34,21 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <DefineConstants>__IOS__;__MOBILE__;MVX</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.FileSystem.Desktop\DesktopFileSystem.cs">
+      <Link>DesktopFileSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.FileSystem.Desktop\FileSystemFile.cs">
+      <Link>FileSystemFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.FileSystem.Desktop\FileSystemFolder.cs">
+      <Link>FileSystemFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\pclstorage\exceptions\PCLStorageExceptions.cs">
+      <Link>Exceptions\PCLStorageExceptions.cs</Link>
+    </Compile>
     <Compile Include="..\IO\Shared Files\MvxPath.cs">
       <Link>MvxPath.cs</Link>
     </Compile>
@@ -69,6 +82,7 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

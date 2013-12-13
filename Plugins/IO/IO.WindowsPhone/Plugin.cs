@@ -16,7 +16,7 @@ namespace Loqu8.MvvmCross.Plugins.IO.WindowsPhone
         public void Load()
         {
             Mvx.RegisterSingleton<IMvxPath>(new MvxPath());
-            //  Mvx.RegisterSingleton<IMvxIO>(new MvxWindowsPhoneIO());
+            Mvx.RegisterSingleton<IFileSystem>(new WP8FileSystem());
         }
     }
 }
