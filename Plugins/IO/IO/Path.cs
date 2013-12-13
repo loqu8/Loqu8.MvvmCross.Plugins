@@ -1,22 +1,25 @@
-﻿using System;
+﻿using Cirrious.CrossCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Security;
+using System.Text;
 
 namespace Loqu8.MvvmCross.Plugins.IO
 {
-    public interface IMvxPath
+    public static class Path
     {
+        private static IMvxPath _path = Mvx.Resolve<IMvxPath>();
+
         // Summary:
         //     Provides a platform-specific alternate character used to separate directory
         //     levels in a path string that reflects a hierarchical file system organization.
-//        char AltDirectorySeparatorChar { get; }
+        //        char AltDirectorySeparatorChar { get; }
         //
         // Summary:
         //     Provides a platform-specific character used to separate directory levels
         //     in a path string that reflects a hierarchical file system organization.
-//        char DirectorySeparatorChar { get; }
+        //        char DirectorySeparatorChar { get; }
         //
         // Summary:
         //     Provides a platform-specific array of characters that cannot be specified
@@ -24,17 +27,17 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //
         // Returns:
         //     A character array of invalid path characters for the current platform.
-//        [Obsolete("Please use GetInvalidPathChars or GetInvalidFileNameChars instead.")]
-//        char[] InvalidPathChars { get; }
+        //        [Obsolete("Please use GetInvalidPathChars or GetInvalidFileNameChars instead.")]
+        //        char[] InvalidPathChars { get; }
         //
         // Summary:
         //     A platform-specific separator character used to separate path strings in
         //     environment variables.
-//        char PathSeparator { get; }
+        //        char PathSeparator { get; }
         //
         // Summary:
         //     Provides a platform-specific volume separator character.
-//        char VolumeSeparatorChar { get; }
+        //        char VolumeSeparatorChar { get; }
 
         // Summary:
         //     Changes the extension of a path string.
@@ -58,7 +61,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         // Exceptions:
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().
-        string ChangeExtension(string path, string extension);
+        public static string ChangeExtension(string path, string extension)
+        {
+            return _path.ChangeExtension(path, extension);
+        }
         //
         // Summary:
         //     Combines an array of strings into a path.
@@ -77,7 +83,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //
         //   System.ArgumentNullException:
         //     One of the strings in the array is null.
-        string Combine(params string[] paths);
+        public static string Combine(params string[] paths)
+        {
+            return _path.Combine(paths);
+        }
         //
         // Summary:
         //     Combines two strings into a path.
@@ -101,7 +110,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //
         //   System.ArgumentNullException:
         //     path1 or path2 is null.
-        string Combine(string path1, string path2);
+        public static string Combine(string path1, string path2)
+        {
+            return _path.Combine(path1, path2);
+        }
         //
         // Summary:
         //     Combines three strings into a path.
@@ -126,7 +138,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //
         //   System.ArgumentNullException:
         //     path1, path2, or path3 is null.
-        string Combine(string path1, string path2, string path3);
+        public static string Combine(string path1, string path2, string path3)
+        {
+            return _path.Combine(path1, path2, path3);
+        }
         //
         // Summary:
         //     Combines four strings into a path.
@@ -154,7 +169,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //
         //   System.ArgumentNullException:
         //     path1, path2, path3, or path4 is null.
-        string Combine(string path1, string path2, string path3, string path4);
+        public static string Combine(string path1, string path2, string path3, string path4)
+        {
+            return _path.Combine(path1, path2, path3, path4);
+        }
         //
         // Summary:
         //     Returns the directory information for the specified path string.
@@ -175,7 +193,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //
         //   System.IO.PathTooLongException:
         //     The path parameter is longer than the system-defined maximum length.
-        string GetDirectoryName(string path);
+        public static string GetDirectoryName(string path)
+        {
+            return _path.GetDirectoryName(path);
+        }
         //
         // Summary:
         //     Returns the extension of the specified path string.
@@ -193,7 +214,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         // Exceptions:
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().
-        string GetExtension(string path);
+        public static string GetExtension(string path)
+        {
+            return _path.GetExtension(path);
+        }
         //
         // Summary:
         //     Returns the file name and extension of the specified path string.
@@ -210,7 +234,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         // Exceptions:
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().
-        string GetFileName(string path);
+        public static string GetFileName(string path)
+        {
+            return _path.GetFileName(path);
+        }
         //
         // Summary:
         //     Returns the file name of the specified path string without the extension.
@@ -226,7 +253,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         // Exceptions:
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().
-        string GetFileNameWithoutExtension(string path);
+        public static string GetFileNameWithoutExtension(string path)
+        {
+            return _path.GetFileNameWithoutExtension(path);
+        }
         //
         // Summary:
         //     Returns the absolute path for the specified path string.
@@ -258,22 +288,28 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //     The specified path, file name, or both exceed the system-defined maximum
         //     length. For example, on Windows-based platforms, paths must be less than
         //     248 characters, and file names must be less than 260 characters.
-//        [SecuritySafeCritical]
-//        string GetFullPath(string path);
+        //        [SecuritySafeCritical]
+        //        string GetFullPath(string path);
         //
         // Summary:
         //     Gets an array containing the characters that are not allowed in file names.
         //
         // Returns:
         //     An array containing the characters that are not allowed in file names.
-        char[] GetInvalidFileNameChars();
+        public static char[] GetInvalidFileNameChars()
+        {
+            return _path.GetInvalidFileNameChars();
+        }
         //
         // Summary:
         //     Gets an array containing the characters that are not allowed in path names.
         //
         // Returns:
         //     An array containing the characters that are not allowed in path names.
-        char[] GetInvalidPathChars();
+        public static char[] GetInvalidPathChars()
+        {
+            return _path.GetInvalidPathChars();
+        }
         //
         // Summary:
         //     Gets the root directory information of the specified path.
@@ -290,14 +326,17 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().-or-
         //     System.String.Empty was passed to path.
-        string GetPathRoot(string path);
+        public static string GetPathRoot(string path)
+        {
+           return _path.GetPathRoot(path);
+        }
         //
         // Summary:
         //     Returns a random folder name or file name.
         //
         // Returns:
         //     A random folder name or file name.
-//        string GetRandomFileName();
+//      string GetRandomFileName();
         //
         // Summary:
         //     Creates a uniquely named, zero-byte temporary file on disk and returns the
@@ -310,8 +349,8 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //   System.IO.IOException:
         //     An I/O error occurs, such as no unique temporary file name is available.-
         //     or -This method was unable to create a temporary file.
-//        [SecuritySafeCritical]
-//        string GetTempFileName();
+        //        [SecuritySafeCritical]
+        //        string GetTempFileName();
         //
         // Summary:
         //     Returns the path of the current user's temporary folder.
@@ -323,7 +362,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //   System.Security.SecurityException:
         //     The caller does not have the required permissions.
         [SecuritySafeCritical]
-        string GetTempPath();
+        public static string GetTempPath()
+        {
+            return _path.GetTempPath();
+        }
         //
         // Summary:
         //     Determines whether a path includes a file name extension.
@@ -340,7 +382,10 @@ namespace Loqu8.MvvmCross.Plugins.IO
         // Exceptions:
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().
-        bool HasExtension(string path);
+        public static bool HasExtension(string path)
+        {
+            return _path.HasExtension(path);
+        }
         //
         // Summary:
         //     Gets a value indicating whether the specified path string contains a root.
@@ -355,6 +400,9 @@ namespace Loqu8.MvvmCross.Plugins.IO
         // Exceptions:
         //   System.ArgumentException:
         //     path contains one or more of the invalid characters defined in System.IO.Path.GetInvalidPathChars().
-        bool IsPathRooted(string path);
+        public static bool IsPathRooted(string path)
+        {
+            return _path.IsPathRooted(path);
+        }
     }
 }

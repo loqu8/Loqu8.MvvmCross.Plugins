@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="IMvxFileInfo.cs" />
     <Compile Include="IMvxPath.cs" />
+    <Compile Include="Path.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Shared Files\MvxPath.cs" />
