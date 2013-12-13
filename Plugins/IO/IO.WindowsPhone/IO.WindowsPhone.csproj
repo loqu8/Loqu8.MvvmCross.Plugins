@@ -85,14 +85,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WP8\WP8File.cs">
-      <Link>WP8File.cs</Link>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.IsoStore.SL\IsoStoreFile.cs">
+      <Link>IsoStoreFile.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WP8\WP8FileSystem.cs">
-      <Link>WP8FileSystem.cs</Link>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.IsoStore.SL\IsoStoreFileSystem.cs">
+      <Link>IsoStoreFileSystem.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WP8\WP8Folder.cs">
-      <Link>WP8Folder.cs</Link>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.IsoStore.SL\IsoStoreFolder.cs">
+      <Link>IsoStoreFolder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WinRT\WinRTFile.cs">
+      <Link>WinRTFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WinRT\WinRTFileSystem.cs">
+      <Link>WinRTFileSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\pclstorage\src\PCLStorage.WinRT\WinRTFolder.cs">
+      <Link>WinRTFolder.cs</Link>
     </Compile>
     <Compile Include="..\..\..\pclstorage\src\pclstorage\exceptions\PCLStorageExceptions.cs">
       <Link>Exceptions\PCLStorageExceptions.cs</Link>
