@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.IO.WindowsStore.
+{
+    public class MvxWindowsStoreIO : IMvxIO
+    {
+        public MvxWindowsStoreIO()
+        {
+        }
+
+        #region IIO
+
+        #endregion IIO
+    }
+}

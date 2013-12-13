@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Loqu8.MvvmCross.XamMac.Plugins.IO</id>
+		<version>3.1.1-beta1</version>
+		<title>MvvmCross - XamMac IO Plugin</title>
+		<authors>E. Timothy Uy</authors>
+		<owners>Loqu8</owners>
+		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+		<projectUrl>https://github.com/loqu8/Loqu8.MvvmCross.Plugins</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Everyone needs a IO...</description>
+		<tags>mvvm mvvmcross xamarin monodroid monotouch xammac</tags>
+		<dependencies>
+		  <dependency id="MvvmCross.HotTuna.XamMac.CrossCore" version="3.1.1-beta1" />
+		</dependencies>
+	</metadata>
+	<files>		
+		<!-- PCL -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.IO.dll" target="lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Loqu8.MvvmCross.Plugins.IO.dll" />
+
+		<!-- xammac -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.IO.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.IO.dll" />
+		<file src="..\bin\Release\Mvx\XamMac\Loqu8.MvvmCross.Plugins.IO.XamMac.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.IO.XamMac.dll" />
+        <file src="MacBootstrapContent\IOPluginBootstrap.cs.pp" target="content\net45\Bootstrap\IOPluginBootstrap.cs.pp" />
+			
+		<!-- droid -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.IO.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.IO.dll" />
+		<file src="..\bin\Release\Mvx\Droid\Loqu8.MvvmCross.Plugins.IO.Droid.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.IO.Droid.dll" />
+        <file src="BootstrapContent\IOPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\IOPluginBootstrap.cs.pp" />
+
+		<!-- touch -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.IO.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.IO.dll" />
+		<file src="..\bin\Release\Mvx\Touch\Loqu8.MvvmCross.Plugins.IO.Touch.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.IO.Touch.dll" />
+        <file src="TouchBootstrapContent\IOPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\IOPluginBootstrap.cs.pp" />
+			
+	</files>
+</package>

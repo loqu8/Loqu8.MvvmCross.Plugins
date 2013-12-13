@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.IO.Touch
+{
+    public class MvxTouchIO : IMvxIO
+    {
+        public MvxTouchIO()
+        {
+        }
+
+        #region IIO
+
+        #endregion IIO
+    }
+}

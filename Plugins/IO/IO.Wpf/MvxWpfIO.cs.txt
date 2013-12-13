@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.IO.Wpf.
+{
+    public class MvxWpfIO : IMvxIO
+    {
+        public MvxWpfIO()
+        {
+        }
+
+        #region IIO
+
+        #endregion IIO
+    }
+}

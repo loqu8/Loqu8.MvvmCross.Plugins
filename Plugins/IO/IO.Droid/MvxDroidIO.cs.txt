@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.IO.Droid
+{
+    public class MvxDroidIO : IMvxIO
+    {
+        public MvxDroidIO()
+        {
+        }
+
+        #region IIO
+
+        #endregion IIO
+    }
+}

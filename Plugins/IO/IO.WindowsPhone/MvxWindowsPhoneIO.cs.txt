@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.IO.WindowsPhone.
+{
+    public class MvxWindowsPhoneIO : IMvxIO
+    {
+        public MvxWindowsPhoneIO()
+        {
+        }
+
+        #region IIO
+
+        #endregion IIO
+    }
+}
