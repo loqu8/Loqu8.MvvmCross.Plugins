@@ -12,7 +12,6 @@ namespace Loqu8.MvvmCross.Plugins.IO
     {
         public MvxPath()
         {
-
         }
 
         #region MvxBasePath

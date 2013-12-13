@@ -34,7 +34,7 @@
 		  <Folder Name="BootstrapContent" TargetFolderName="MacBootstrapContent">
 			<ProjectItem ReplaceParameters="true" TargetFileName="$saferootprojectname$PluginBootstrap.cs.pp">TemplatePluginBootstrap.cs.pp</ProjectItem>
 		  </Folder>
-		  <Folder Name="BootstrapContent" TargetFolderName="XamMacBootstrapContent">
+		  <Folder Name="BootstrapContent" TargetFolderName="TouchBootstrapContent">
 			<ProjectItem ReplaceParameters="true" TargetFileName="$saferootprojectname$PluginBootstrap.cs.pp">TemplatePluginBootstrap.cs.pp</ProjectItem>
 		  </Folder>
 	  </Folder>
