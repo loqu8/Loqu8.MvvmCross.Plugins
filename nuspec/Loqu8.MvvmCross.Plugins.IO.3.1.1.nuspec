@@ -26,12 +26,15 @@
 		
 		<!-- store -->
 		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.IO.dll" target="lib\netcore45\Loqu8.MvvmCross.Plugins.IO.dll" />
-		<file src="..\bin\Release\Mvx\WindowsStore\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" target="lib\netcore45\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" />
+		<file src="..\bin\Release\Mvx\WindowsStore\ARM\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" target="lib\netcore45\ARM\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" />
+		<file src="..\bin\Release\Mvx\WindowsStore\x86\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" target="lib\netcore45\x86\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" />
+		<file src="..\bin\Release\Mvx\WindowsStore\x64\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" target="lib\netcore45\x64\Loqu8.MvvmCross.Plugins.IO.WindowsStore.dll" />
         <file src="BootstrapContent\IOPluginBootstrap.cs.pp" target="content\netcore45\Bootstrap\IOPluginBootstrap.cs.pp" />
         
 		<!-- phone -->
 		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.IO.dll" target="lib\wp80\Loqu8.MvvmCross.Plugins.IO.dll" />
-		<file src="..\bin\Release\Mvx\WindowsPhone\Loqu8.MvvmCross.Plugins.IO.WindowsPhone.dll" target="lib\wp80\Loqu8.MvvmCross.Plugins.IO.WindowsPhone.dll" />
+		<file src="..\bin\Release\Mvx\WindowsPhone\ARM\Loqu8.MvvmCross.Plugins.IO.WindowsPhone.dll" target="lib\wp80\ARM\Loqu8.MvvmCross.Plugins.IO.WindowsPhone.dll" />
+		<file src="..\bin\Release\Mvx\WindowsPhone\x86\Loqu8.MvvmCross.Plugins.IO.WindowsPhone.dll" target="lib\wp80\x86\Loqu8.MvvmCross.Plugins.IO.WindowsPhone.dll" />
         <file src="BootstrapContent\IOPluginBootstrap.cs.pp" target="content\wp80\Bootstrap\IOPluginBootstrap.cs.pp" />
 	
 		<!-- droid -->
