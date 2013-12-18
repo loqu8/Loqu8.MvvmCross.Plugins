@@ -17,6 +17,8 @@ namespace Loqu8.MvvmCross.Plugins.IO.Mac
         {
             Mvx.RegisterSingleton<IMvxPath>(new MvxPath());
             Mvx.RegisterSingleton<IFileSystem>(new DesktopFileSystem());
+            Mvx.RegisterType<IFile, FileSystemFile>();
+            Mvx.RegisterType<IFolder, FileSystemFolder>();
         }
     }
 }

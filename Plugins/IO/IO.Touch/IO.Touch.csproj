@@ -49,6 +49,21 @@
     <Compile Include="..\..\..\pclstorage\src\pclstorage\exceptions\PCLStorageExceptions.cs">
       <Link>Exceptions\PCLStorageExceptions.cs</Link>
     </Compile>
+    <Compile Include="..\IO\Shared Files\Compression\CompressionExtensions.cs">
+      <Link>Compression\CompressionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\IO\Shared Files\Compression\MvxDeflateStream.cs">
+      <Link>Compression\MvxDeflateStream.cs</Link>
+    </Compile>
+    <Compile Include="..\IO\Shared Files\Compression\MvxDeflateStreamFactory.cs">
+      <Link>Compression\MvxDeflateStreamFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\IO\Shared Files\Compression\MvxGZipStream.cs">
+      <Link>Compression\MvxGZipStream.cs</Link>
+    </Compile>
+    <Compile Include="..\IO\Shared Files\Compression\MvxGZipStreamFactory.cs">
+      <Link>Compression\MvxGZipStreamFactory.cs</Link>
+    </Compile>
     <Compile Include="..\IO\Shared Files\MvxPath.cs">
       <Link>MvxPath.cs</Link>
     </Compile>
@@ -88,7 +103,7 @@
   <ItemGroup>
     <ProjectReference Include="..\IO\IO.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
-      <Name>IO %28IO\IO%29</Name>
+      <Name>IO %28Plugins\IO\IO%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

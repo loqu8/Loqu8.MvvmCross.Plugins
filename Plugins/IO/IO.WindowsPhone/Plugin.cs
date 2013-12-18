@@ -17,6 +17,8 @@ namespace Loqu8.MvvmCross.Plugins.IO.WindowsPhone
         {
             Mvx.RegisterSingleton<IMvxPath>(new MvxPath());
             Mvx.RegisterSingleton<IFileSystem>(new WinRTFileSystem());
+            Mvx.RegisterType<IFile, WinRTFile>();
+            Mvx.RegisterType<IFolder, WinRTFolder>();
         }
     }
 }

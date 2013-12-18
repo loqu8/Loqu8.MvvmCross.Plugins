@@ -52,10 +52,26 @@
     <Compile Include="..\..\..\pclstorage\src\PCLStorage.Abstractions\IFolder.cs">
       <Link>IFolder.cs</Link>
     </Compile>
+    <Compile Include="Compression\CompressionLevel.cs" />
+    <Compile Include="Compression\CompressionMode.cs" />
+    <Compile Include="Compression\IMvxCompressionStreamFactory.cs" />
+    <Compile Include="Compression\DeflateStream.cs" />
+    <Compile Include="Compression\GZipStream.cs" />
+    <Compile Include="Compression\IMvxCompressionStream.cs" />
+    <Compile Include="Compression\IMvxDeflateStreamFactory.cs" />
+    <Compile Include="Compression\IMvxGZipStreamFactory.cs" />
+    <Compile Include="Compression\MvxCompressionStream.cs" />
     <Compile Include="IMvxPath.cs" />
+    <Compile Include="IMvxStream.cs" />
+    <Compile Include="MvxBaseStream.cs" />
     <Compile Include="Path.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Shared Files\Compression\CompressionExtensions.cs" />
+    <None Include="Shared Files\Compression\MvxDeflateStreamFactory.cs" />
+    <None Include="Shared Files\Compression\MvxGZipStreamFactory.cs" />
+    <None Include="Shared Files\Compression\MvxGZipStream.cs" />
+    <None Include="Shared Files\Compression\MvxDeflateStream.cs" />
     <None Include="Shared Files\MvxPath.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +87,14 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions">
       <HintPath>..\..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO">
+      <HintPath>..\..\..\packages\Microsoft.Bcl.1.1.6\lib\portable-net40+sl5+win8+wp8\System.IO.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime">
-      <HintPath>..\..\..\packages\Microsoft.Bcl.1.0.19\lib\portable-net40+sl5+win8+wp8\System.Runtime.dll</HintPath>
+      <HintPath>..\..\..\packages\Microsoft.Bcl.1.1.6\lib\portable-net40+sl5+win8+wp8\System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks">
-      <HintPath>..\..\..\packages\Microsoft.Bcl.1.0.19\lib\portable-net40+sl5+win8+wp8\System.Threading.Tasks.dll</HintPath>
+      <HintPath>..\..\..\packages\Microsoft.Bcl.1.1.6\lib\portable-net40+sl5+win8+wp8\System.Threading.Tasks.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
