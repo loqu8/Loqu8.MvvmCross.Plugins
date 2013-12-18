@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Loqu8.MvvmCross.Plugins.IO.Compression;
 using System.IO;
 using Cirrious.MvvmCross.Test.Core;
+using Cirrious.CrossCore;
 
 namespace IO.Wpf.Tests
 {
@@ -22,18 +23,20 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
         {
             Setup();
 
-            Ioc.RegisterSingleton<IMvxDeflateStreamFactory>(new MvxDeflateStreamFactory());
-            Ioc.RegisterSingleton<IMvxGZipStreamFactory>(new MvxGZipStreamFactory());            
+            Ioc.RegisterSingleton<IDeflateStreamFactory>(new DeflateStreamFactory());
+            Ioc.RegisterSingleton<IGZipStreamFactory>(new GZipStreamFactory());            
         }
 
         [Test]
         public void DeflateTest()
         {
+            var deflateStreamFactory = Mvx.Resolve<IDeflateStreamFactory>();
+
             using (var ms = new MemoryStream())
             {
                 var bytes = UTF8Encoding.UTF8.GetBytes(sample);
 
-                using (var ds = new DeflateStream(ms, CompressionMode.Compress))
+                using (var ds = deflateStreamFactory.Create(ms, CompressionMode.Compress))
                 {                   
                     ds.Write(bytes, 0, bytes.Length);
                 }
@@ -44,7 +47,7 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
 
                 using (var ms2 = new MemoryStream())
                 {
-                    using (var ds2 = new DeflateStream(new MemoryStream(compressed), CompressionMode.Decompress))
+                    using (var ds2 = deflateStreamFactory.Create(new MemoryStream(compressed), CompressionMode.Decompress))
                     {
 	                    const int size = 4096;
 	                    byte[] buffer = new byte[size];
@@ -72,11 +75,13 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
         [Test]
         public void GZipTest()
         {
+            var gzipStreamFactory = Mvx.Resolve<IGZipStreamFactory>();
+
             using (var ms = new MemoryStream())
             {
                 var bytes = UTF8Encoding.UTF8.GetBytes(sample);
 
-                using (var gz = new GZipStream(ms, CompressionMode.Compress))
+                using (var gz = gzipStreamFactory.Create(ms, CompressionMode.Compress))
                 {                    
                     gz.Write(bytes, 0, bytes.Length);
                 }
@@ -87,7 +92,7 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can n
 
                 using (var ms2 = new MemoryStream())
                 {
-                    using (var gz2 = new GZipStream(new MemoryStream(compressed), CompressionMode.Decompress))
+                    using (var gz2 = gzipStreamFactory.Create(new MemoryStream(compressed), CompressionMode.Decompress))
                     {
 	                    const int size = 4096;
 	                    byte[] buffer = new byte[size];

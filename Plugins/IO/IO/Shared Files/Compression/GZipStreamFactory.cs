@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.IO.Compression;
 
 namespace Loqu8.MvvmCross.Plugins.IO.Compression
 {
-    public class MvxGZipStreamFactory : IMvxGZipStreamFactory
+    public class GZipStreamFactory : IGZipStreamFactory
     {
         // Summary:
         //     Initializes a new instance of the IO.Compression.GZipStream class
@@ -27,9 +28,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //   System.ArgumentException:
         //     The stream does not support write operations such as compression. (The System.IO.Stream.CanWrite
         //     property on the stream object is false.)
-        public IMvxCompressionStream Create(Stream stream, CompressionLevel compressionLevel)
+        public Stream Create(Stream stream, CompressionLevel compressionLevel)
         {
-            return new MvxGZipStream(stream, compressionLevel);
+            return new GZipStream(stream, compressionLevel.ToSystem());
         }
 
         //
@@ -54,9 +55,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     is System.IO.Compression.CompressionMode.Compress and System.IO.Stream.CanWrite
         //     is false.-or-System.IO.Compression.CompressionMode is System.IO.Compression.CompressionMode.Decompress
         //     and System.IO.Stream.CanRead is false.
-        public IMvxCompressionStream Create(Stream stream, CompressionMode mode)
+        public Stream Create(Stream stream, CompressionMode mode)
         {
-            return new MvxGZipStream(stream, mode);
+            return new GZipStream(stream, mode.ToSystem());
         }
 
         //
@@ -84,9 +85,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //   System.ArgumentException:
         //     The stream does not support write operations such as compression. (The System.IO.Stream.CanWrite
         //     property on the stream object is false.)
-        public IMvxCompressionStream Create(Stream stream, CompressionLevel compressionLevel, bool leaveOpen)
+        public Stream Create(Stream stream, CompressionLevel compressionLevel, bool leaveOpen)
         {
-            return new MvxGZipStream(stream, compressionLevel, leaveOpen);
+            return new GZipStream(stream, compressionLevel.ToSystem(), leaveOpen);
         }
 
         //
@@ -116,9 +117,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     is System.IO.Compression.CompressionMode.Compress and System.IO.Stream.CanWrite
         //     is false.-or-System.IO.Compression.CompressionMode is System.IO.Compression.CompressionMode.Decompress
         //     and System.IO.Stream.CanRead is false.
-        public IMvxCompressionStream Create(Stream stream, CompressionMode mode, bool leaveOpen)
+        public Stream Create(Stream stream, CompressionMode mode, bool leaveOpen)
         {
-            return new MvxGZipStream(stream, mode, leaveOpen);
+            return new GZipStream(stream, mode.ToSystem(), leaveOpen);
         }
     }
 }

@@ -20,8 +20,8 @@ namespace Loqu8.MvvmCross.Plugins.IO.Droid
             Mvx.RegisterSingleton<IFileSystem>(new DesktopFileSystem());
             Mvx.RegisterType<IFile, FileSystemFile>();
             Mvx.RegisterType<IFolder, FileSystemFolder>();
-            Mvx.RegisterSingleton<IMvxDeflateStreamFactory>(new MvxDeflateStreamFactory());
-            Mvx.RegisterSingleton<IMvxGZipStreamFactory>(new MvxGZipStreamFactory());
+            Mvx.RegisterSingleton<IDeflateStreamFactory>(new DeflateStreamFactory());
+            Mvx.RegisterSingleton<IGZipStreamFactory>(new GZipStreamFactory());
         }
     }
 }

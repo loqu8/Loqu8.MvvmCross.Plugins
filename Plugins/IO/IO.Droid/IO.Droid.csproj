@@ -91,17 +91,11 @@
     <Compile Include="..\io\shared files\compression\CompressionExtensions.cs">
       <Link>Compression\CompressionExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\io\shared files\compression\MvxDeflateStream.cs">
-      <Link>Compression\MvxDeflateStream.cs</Link>
+    <Compile Include="..\IO\Shared Files\Compression\DeflateStreamFactory.cs">
+      <Link>Compression\DeflateStreamFactory.cs</Link>
     </Compile>
-    <Compile Include="..\io\shared files\compression\MvxDeflateStreamFactory.cs">
-      <Link>Compression\MvxDeflateStreamFactory.cs</Link>
-    </Compile>
-    <Compile Include="..\io\shared files\compression\MvxGZipStream.cs">
-      <Link>Compression\MvxGZipStream.cs</Link>
-    </Compile>
-    <Compile Include="..\io\shared files\compression\MvxGZipStreamFactory.cs">
-      <Link>Compression\MvxGZipStreamFactory.cs</Link>
+    <Compile Include="..\IO\Shared Files\Compression\GZipStreamFactory.cs">
+      <Link>Compression\GZipStreamFactory.cs</Link>
     </Compile>
     <Compile Include="..\IO\Shared Files\MvxPath.cs">
       <Link>MvxPath.cs</Link>
