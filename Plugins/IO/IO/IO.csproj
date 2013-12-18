@@ -54,24 +54,18 @@
     </Compile>
     <Compile Include="Compression\CompressionLevel.cs" />
     <Compile Include="Compression\CompressionMode.cs" />
-    <Compile Include="Compression\IMvxCompressionStreamFactory.cs" />
-    <Compile Include="Compression\DeflateStream.cs" />
-    <Compile Include="Compression\GZipStream.cs" />
-    <Compile Include="Compression\IMvxCompressionStream.cs" />
-    <Compile Include="Compression\IMvxDeflateStreamFactory.cs" />
-    <Compile Include="Compression\IMvxGZipStreamFactory.cs" />
-    <Compile Include="Compression\MvxCompressionStream.cs" />
+    <Compile Include="Compression\ICompressionStreamFactory.cs" />
+    <Compile Include="Compression\IDeflateStreamFactory.cs" />
+    <Compile Include="Compression\IGZipStreamFactory.cs" />
     <Compile Include="IMvxPath.cs" />
     <Compile Include="IMvxStream.cs" />
     <Compile Include="MvxBaseStream.cs" />
     <Compile Include="Path.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Shared Files\Compression\GZipStreamFactory.cs" />
+    <None Include="Shared Files\Compression\DeflateStreamFactory.cs" />
     <None Include="Shared Files\Compression\CompressionExtensions.cs" />
-    <None Include="Shared Files\Compression\MvxDeflateStreamFactory.cs" />
-    <None Include="Shared Files\Compression\MvxGZipStreamFactory.cs" />
-    <None Include="Shared Files\Compression\MvxGZipStream.cs" />
-    <None Include="Shared Files\Compression\MvxDeflateStream.cs" />
     <None Include="Shared Files\MvxPath.cs" />
   </ItemGroup>
   <ItemGroup>

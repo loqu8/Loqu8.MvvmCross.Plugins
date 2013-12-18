@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.IO;
 
 namespace Loqu8.MvvmCross.Plugins.IO.Compression
 {
-    public class MvxDeflateStreamFactory : IMvxDeflateStreamFactory
+    public interface ICompressionStreamFactory
     {
         // Summary:
-        //     Initializes a new instance of the IO.Compression.DeflateStream class
+        //     Initializes a new instance of the IO.Compression.GZipStream class
         //     by using the specified stream and compression level.
         //
         // Parameters:
@@ -27,14 +27,11 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //   System.ArgumentException:
         //     The stream does not support write operations such as compression. (The System.IO.Stream.CanWrite
         //     property on the stream object is false.)
-        public IMvxCompressionStream Create(Stream stream, CompressionLevel compressionLevel)
-        {
-            return new MvxDeflateStream(stream, compressionLevel);
-        }
+        Stream Create(Stream stream, CompressionLevel compressionLevel);
 
         //
         // Summary:
-        //     Initializes a new instance of the IO.Compression.DeflateStream class
+        //     Initializes a new instance of the IO.Compression.GZipStream class
         //     by using the specified stream and compression mode.
         //
         // Parameters:
@@ -50,18 +47,15 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     stream is null.
         //
         //   System.ArgumentException:
-        //     mode is not a valid System.IO.Compression.CompressionMode value.-or-System.IO.Compression.CompressionMode
+        //     mode is not a valid System.IO.Compression.CompressionMode enumeration value.-or-System.IO.Compression.CompressionMode
         //     is System.IO.Compression.CompressionMode.Compress and System.IO.Stream.CanWrite
         //     is false.-or-System.IO.Compression.CompressionMode is System.IO.Compression.CompressionMode.Decompress
         //     and System.IO.Stream.CanRead is false.
-        public IMvxCompressionStream Create(Stream stream, CompressionMode mode)
-        {
-            return new MvxDeflateStream(stream, mode);
-        }
+        Stream Create(Stream stream, CompressionMode mode);
 
         //
         // Summary:
-        //     Initializes a new instance of the IO.Compression.DeflateStream class
+        //     Initializes a new instance of the IO.Compression.GZipStream class
         //     by using the specified stream and compression level, and optionally leaves
         //     the stream open.
         //
@@ -74,7 +68,7 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     compression efficiency when compressing the stream.
         //
         //   leaveOpen:
-        //     true to leave the stream object open after disposing the IO.Compression.DeflateStream
+        //     true to leave the stream object open after disposing the IO.Compression.GZipStream
         //     object; otherwise, false.
         //
         // Exceptions:
@@ -84,14 +78,11 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //   System.ArgumentException:
         //     The stream does not support write operations such as compression. (The System.IO.Stream.CanWrite
         //     property on the stream object is false.)
-        public IMvxCompressionStream Create(Stream stream, CompressionLevel compressionLevel, bool leaveOpen)
-        {
-            return new MvxDeflateStream(stream, compressionLevel, leaveOpen);
-        }
+        Stream Create(Stream stream, CompressionLevel compressionLevel, bool leaveOpen);
 
         //
         // Summary:
-        //     Initializes a new instance of the IO.Compression.DeflateStream class
+        //     Initializes a new instance of the IO.Compression.GZipStream class
         //     by using the specified stream and compression mode, and optionally leaves
         //     the stream open.
         //
@@ -104,7 +95,7 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     the stream.
         //
         //   leaveOpen:
-        //     true to leave the stream open after disposing the IO.Compression.DeflateStream
+        //     true to leave the stream open after disposing the IO.Compression.GZipStream
         //     object; otherwise, false.
         //
         // Exceptions:
@@ -116,9 +107,6 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     is System.IO.Compression.CompressionMode.Compress and System.IO.Stream.CanWrite
         //     is false.-or-System.IO.Compression.CompressionMode is System.IO.Compression.CompressionMode.Decompress
         //     and System.IO.Stream.CanRead is false.
-        public IMvxCompressionStream Create(Stream stream, CompressionMode mode, bool leaveOpen)
-        {
-            return new MvxDeflateStream(stream, mode, leaveOpen);
-        }
+        Stream Create(Stream stream, CompressionMode mode, bool leaveOpen);
     }
 }

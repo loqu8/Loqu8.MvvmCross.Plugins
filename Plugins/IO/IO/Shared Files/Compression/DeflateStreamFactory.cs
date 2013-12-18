@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.IO.Compression;
 
 namespace Loqu8.MvvmCross.Plugins.IO.Compression
 {
-    public abstract class MvxCompressionStream : MvxBaseStream, IMvxCompressionStream
+    public class DeflateStreamFactory : IDeflateStreamFactory
     {
-        protected IMvxCompressionStreamFactory _mvxCompressionStreamFactory;
-
-        protected abstract IMvxCompressionStreamFactory CreateFactory();
-
         // Summary:
         //     Initializes a new instance of the IO.Compression.DeflateStream class
         //     by using the specified stream and compression level.
@@ -31,10 +28,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //   System.ArgumentException:
         //     The stream does not support write operations such as compression. (The System.IO.Stream.CanWrite
         //     property on the stream object is false.)
-        public MvxCompressionStream(Stream stream, CompressionLevel compressionLevel)
+        public Stream Create(Stream stream, CompressionLevel compressionLevel)
         {
-            _mvxCompressionStreamFactory = CreateFactory();
-            _mvxStream = _mvxCompressionStreamFactory.Create(stream, compressionLevel);
+            return new DeflateStream(stream, compressionLevel.ToSystem());
         }
 
         //
@@ -59,10 +55,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     is System.IO.Compression.CompressionMode.Compress and System.IO.Stream.CanWrite
         //     is false.-or-System.IO.Compression.CompressionMode is System.IO.Compression.CompressionMode.Decompress
         //     and System.IO.Stream.CanRead is false.
-        public MvxCompressionStream(Stream stream, CompressionMode mode)
+        public Stream Create(Stream stream, CompressionMode mode)
         {
-            _mvxCompressionStreamFactory = CreateFactory();
-            _mvxStream = _mvxCompressionStreamFactory.Create(stream, mode);
+            return new DeflateStream(stream, mode.ToSystem());
         }
 
         //
@@ -90,10 +85,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //   System.ArgumentException:
         //     The stream does not support write operations such as compression. (The System.IO.Stream.CanWrite
         //     property on the stream object is false.)
-        public MvxCompressionStream(Stream stream, CompressionLevel compressionLevel, bool leaveOpen)
+        public Stream Create(Stream stream, CompressionLevel compressionLevel, bool leaveOpen)
         {
-            _mvxCompressionStreamFactory = CreateFactory();
-            _mvxStream = _mvxCompressionStreamFactory.Create(stream, compressionLevel, leaveOpen);
+            return new DeflateStream(stream, compressionLevel.ToSystem(), leaveOpen);
         }
 
         //
@@ -123,24 +117,9 @@ namespace Loqu8.MvvmCross.Plugins.IO.Compression
         //     is System.IO.Compression.CompressionMode.Compress and System.IO.Stream.CanWrite
         //     is false.-or-System.IO.Compression.CompressionMode is System.IO.Compression.CompressionMode.Decompress
         //     and System.IO.Stream.CanRead is false.
-        public MvxCompressionStream(Stream stream, CompressionMode mode, bool leaveOpen)
+        public Stream Create(Stream stream, CompressionMode mode, bool leaveOpen)
         {
-            _mvxCompressionStreamFactory = CreateFactory();
-            _mvxStream = _mvxCompressionStreamFactory.Create(stream, mode, leaveOpen);
-        }
-
-        // Summary:
-        //     Gets a reference to the underlying stream.
-        //
-        // Returns:
-        //     A stream object that represents the underlying stream.
-        //
-        // Exceptions:
-        //   System.ObjectDisposedException:
-        //     The underlying stream is closed.
-        public Stream BaseStream
-        {
-            get { return ((IMvxCompressionStream)_mvxStream).BaseStream; }
+            return new DeflateStream(stream, mode.ToSystem(), leaveOpen);
         }
     }
 }

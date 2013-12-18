@@ -20,8 +20,8 @@ namespace Loqu8.MvvmCross.Plugins.IO.WindowsPhone
             Mvx.RegisterSingleton<IFileSystem>(new WinRTFileSystem());
             Mvx.RegisterType<IFile, WinRTFile>();
             Mvx.RegisterType<IFolder, WinRTFolder>();
-            Mvx.RegisterSingleton<IMvxDeflateStreamFactory>(new MvxDeflateStreamFactory());
-            Mvx.RegisterSingleton<IMvxGZipStreamFactory>(new MvxGZipStreamFactory());
+            Mvx.RegisterSingleton<IDeflateStreamFactory>(new DeflateStreamFactory());
+            Mvx.RegisterSingleton<IGZipStreamFactory>(new GZipStreamFactory());
         }
     }
 }
