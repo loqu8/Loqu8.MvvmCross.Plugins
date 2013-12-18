@@ -7,6 +7,7 @@
 
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
+using Loqu8.MvvmCross.Plugins.IO.Compression;
 
 namespace Loqu8.MvvmCross.Plugins.IO.Droid
 {
@@ -19,6 +20,8 @@ namespace Loqu8.MvvmCross.Plugins.IO.Droid
             Mvx.RegisterSingleton<IFileSystem>(new DesktopFileSystem());
             Mvx.RegisterType<IFile, FileSystemFile>();
             Mvx.RegisterType<IFolder, FileSystemFolder>();
+            Mvx.RegisterSingleton<IMvxDeflateStreamFactory>(new MvxDeflateStreamFactory());
+            Mvx.RegisterSingleton<IMvxGZipStreamFactory>(new MvxGZipStreamFactory());
         }
     }
 }
