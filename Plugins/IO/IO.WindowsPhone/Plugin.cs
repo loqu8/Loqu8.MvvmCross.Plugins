@@ -7,6 +7,7 @@
 
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
+using Loqu8.MvvmCross.Plugins.IO.Compression;
 
 namespace Loqu8.MvvmCross.Plugins.IO.WindowsPhone
 {
@@ -19,6 +20,8 @@ namespace Loqu8.MvvmCross.Plugins.IO.WindowsPhone
             Mvx.RegisterSingleton<IFileSystem>(new WinRTFileSystem());
             Mvx.RegisterType<IFile, WinRTFile>();
             Mvx.RegisterType<IFolder, WinRTFolder>();
+            Mvx.RegisterSingleton<IMvxDeflateStreamFactory>(new MvxDeflateStreamFactory());
+            Mvx.RegisterSingleton<IMvxGZipStreamFactory>(new MvxGZipStreamFactory());
         }
     }
 }
