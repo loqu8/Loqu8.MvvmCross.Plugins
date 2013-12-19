@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Data.Wpf.
+{
+    public class MvxWpfData : IMvxData
+    {
+        public MvxWpfData()
+        {
+        }
+
+        #region IData
+
+        #endregion IData
+    }
+}

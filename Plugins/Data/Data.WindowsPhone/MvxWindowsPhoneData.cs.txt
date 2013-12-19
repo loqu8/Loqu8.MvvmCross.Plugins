@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Data.WindowsPhone.
+{
+    public class MvxWindowsPhoneData : IMvxData
+    {
+        public MvxWindowsPhoneData()
+        {
+        }
+
+        #region IData
+
+        #endregion IData
+    }
+}

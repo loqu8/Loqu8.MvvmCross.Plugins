@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Loqu8.MvvmCross.Mac.Plugins.Data</id>
+		<version>3.1.1-beta1</version>
+		<title>MvvmCross - Mac Data Plugin</title>
+		<authors>E. Timothy Uy</authors>
+		<owners>Loqu8</owners>
+		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+		<projectUrl>https://github.com/loqu8/Loqu8.MvvmCross.Plugins</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Everyone needs a Data...</description>
+		<tags>mvvm mvvmcross xamarin monodroid monotouch mac</tags>
+		<dependencies>
+		  <dependency id="MvvmCross.HotTuna.Mac.CrossCore" version="3.1.1-beta1" />
+		</dependencies>
+	</metadata>
+	<files>		
+		<!-- PCL -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Data.dll" target="lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Loqu8.MvvmCross.Plugins.Data.dll" />
+
+		<!-- mac -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Data.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.Data.dll" />
+		<file src="..\bin\Release\Mvx\Mac\Loqu8.MvvmCross.Plugins.Data.Mac.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.Data.Mac.dll" />
+        <file src="MacBootstrapContent\DataPluginBootstrap.cs.pp" target="content\net45\Bootstrap\DataPluginBootstrap.cs.pp" />
+			
+		<!-- droid -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Data.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.Data.dll" />
+		<file src="..\bin\Release\Mvx\Droid\Loqu8.MvvmCross.Plugins.Data.Droid.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.Data.Droid.dll" />
+        <file src="BootstrapContent\DataPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\DataPluginBootstrap.cs.pp" />
+
+		<!-- touch -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Data.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.Data.dll" />
+		<file src="..\bin\Release\Mvx\Touch\Loqu8.MvvmCross.Plugins.Data.Touch.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.Data.Touch.dll" />
+        <file src="TouchBootstrapContent\DataPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\DataPluginBootstrap.cs.pp" />
+			
+	</files>
+</package>

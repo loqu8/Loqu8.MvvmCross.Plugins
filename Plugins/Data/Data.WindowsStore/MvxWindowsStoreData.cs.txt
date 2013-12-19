@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Data.WindowsStore.
+{
+    public class MvxWindowsStoreData : IMvxData
+    {
+        public MvxWindowsStoreData()
+        {
+        }
+
+        #region IData
+
+        #endregion IData
+    }
+}

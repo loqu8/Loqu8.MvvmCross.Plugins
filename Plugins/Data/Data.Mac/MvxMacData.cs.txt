@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Data.Mac
+{
+    public class MvxMacData : IMvxData
+    {
+        public MvxMacData()
+        {
+        }
+
+        #region IData
+
+        #endregion IData
+    }
+}

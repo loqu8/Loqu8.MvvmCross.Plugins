@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Data.Touch
+{
+    public class MvxTouchData : IMvxData
+    {
+        public MvxTouchData()
+        {
+        }
+
+        #region IData
+
+        #endregion IData
+    }
+}
