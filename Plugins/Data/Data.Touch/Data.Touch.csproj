@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D5BF5735-F25B-48BB-9214-500800B8585C}</ProjectGuid>
+    <ProjectGuid>{4a725582-bf68-486d-b48e-bd0dc490c791}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Loqu8.MvvmCross.Plugins.Data.Touch</RootNamespace>
@@ -73,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{3FCF023A-BB5F-4BD8-B9E3-C561E3DA7AC9}</Project>
       <Name>Data %28Data\Data%29</Name>
     </ProjectReference>
   </ItemGroup>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{517E677E-C5FB-46B0-8204-16DD34F2B36A}</ProjectGuid>
+    <ProjectGuid>{a4653ee4-b8eb-4e0c-9972-52ff448c245e}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{3FCF023A-BB5F-4BD8-B9E3-C561E3DA7AC9}</Project>
       <Name>Data %28Data\Data%29</Name>
     </ProjectReference>
   </ItemGroup>

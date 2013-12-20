@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD71680F-A77E-4F4D-BD2D-5F0E1A8F53D9}</ProjectGuid>
+    <ProjectGuid>{deeee2a7-ab81-4164-81d2-07e590d274e6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.Data.XamMac</RootNamespace>
@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{3FCF023A-BB5F-4BD8-B9E3-C561E3DA7AC9}</Project>
       <Name>Data %28Data\Data%29</Name>
     </ProjectReference>
   </ItemGroup>

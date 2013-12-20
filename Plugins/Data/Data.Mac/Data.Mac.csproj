@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20FF11CF-B153-4807-90D3-0D6549DC21E0}</ProjectGuid>
+    <ProjectGuid>{b4c66bf4-91db-4a90-beb5-c762f7289b27}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.Data.Mac</RootNamespace>
@@ -70,7 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{3FCF023A-BB5F-4BD8-B9E3-C561E3DA7AC9}</Project>
       <Name>Data %28Data\Data%29</Name>
     </ProjectReference>
   </ItemGroup>

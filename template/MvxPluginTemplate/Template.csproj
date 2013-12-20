@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}</ProjectGuid>
+    <ProjectGuid>{$guid1$}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
@@ -48,7 +48,7 @@
     <None Include="nuspec\Loqu8.MvvmCross.XamMac.Plugins.$saferootprojectname$.3.1.1.nuspec" />
     <None Include="nuspec\BootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
     <None Include="nuspec\MacBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
-    <None Include="nuspec\XamMacBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
+    <None Include="nuspec\TouchBootstrapContent\$saferootprojectname$PluginBootstrap.cs.pp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">

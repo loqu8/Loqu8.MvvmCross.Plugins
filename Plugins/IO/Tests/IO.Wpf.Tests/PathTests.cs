@@ -10,6 +10,7 @@ using Cirrious.CrossCore.Plugins;
 using Cirrious.CrossCore.Platform;
 using Cirrious.CrossCore;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace IO.Wpf.Tests
 {
@@ -29,7 +30,7 @@ namespace IO.Wpf.Tests
             Ioc.RegisterSingleton<IMvxPath>(new MvxPath());
             Ioc.RegisterSingleton<IFileSystem>(new DesktopFileSystem());
             Ioc.RegisterType<IFile, FileSystemFile>();
-            Ioc.RegisterType<IFolder, FileSystemFolder>();
+            Ioc.RegisterType<IFolder, FileSystemFolder>();               
         }
 
         [Test]

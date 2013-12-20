@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{98DDAE8F-A93A-4E0F-8473-B28958762035}</ProjectGuid>
+    <ProjectGuid>{d36e5844-604f-41cf-af67-1019c3314723}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.Data.WindowsStore</RootNamespace>
@@ -126,7 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{3FCF023A-BB5F-4BD8-B9E3-C561E3DA7AC9}</Project>
       <Name>Data %28Data\Data%29</Name>
     </ProjectReference>
   </ItemGroup>
