@@ -44,6 +44,7 @@
     <Compile Include="AsyncStatus.cs" />
     <Compile Include="ByteOrder.cs" />
     <Compile Include="AsyncOperationProgressHandler.cs" />
+    <Compile Include="DataReaderLoadOperation.cs" />
     <Compile Include="IAsyncInfo.cs" />
     <Compile Include="IAsyncOperation.cs" />
     <Compile Include="IAsyncOperationWithProgress.cs" />

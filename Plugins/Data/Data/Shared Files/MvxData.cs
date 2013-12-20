@@ -6,7 +6,7 @@ namespace Loqu8.MvvmCross.Plugins.Data
     {        
         public MvxData()
         {
-            Windows.Storage.Streams.IDataReader
+            var dl = new DataReaderLoadOperation();
         }
 
         #region IData
