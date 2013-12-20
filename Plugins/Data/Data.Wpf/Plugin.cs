@@ -15,7 +15,7 @@ namespace Loqu8.MvvmCross.Plugins.Data.Wpf
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvxData>(new MvxData());
+            Mvx.RegisterSingleton<IDataReader>(new MvxData());
             //  Mvx.RegisterSingleton<IMvxData>(new MvxWpfData());
         }
     }

@@ -39,7 +39,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMvxData.cs" />
+    <Compile Include="AsyncOperationCompletedHandler.cs" />
+    <Compile Include="AsyncOperationWithProgressCompletedHandler.cs" />
+    <Compile Include="AsyncStatus.cs" />
+    <Compile Include="ByteOrder.cs" />
+    <Compile Include="AsyncOperationProgressHandler.cs" />
+    <Compile Include="IAsyncInfo.cs" />
+    <Compile Include="IAsyncOperation.cs" />
+    <Compile Include="IAsyncOperationWithProgress.cs" />
+    <Compile Include="IBuffer.cs" />
+    <Compile Include="IDataReader.cs" />
+    <Compile Include="IInputStream.cs" />
+    <Compile Include="InputStreamOptions.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Shared Files\MvxData.cs" />
