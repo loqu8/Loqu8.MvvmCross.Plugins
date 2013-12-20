@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D59C8C51-D254-4457-BDE0-9A02D8A619A4}</ProjectGuid>
+    <ProjectGuid>{$guid2$}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{$rootguid$}</Project>
       <Name>$saferootprojectname$ %28$saferootprojectname$\$saferootprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>

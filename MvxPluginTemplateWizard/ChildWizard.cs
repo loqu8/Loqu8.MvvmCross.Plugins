@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using EnvDTE80;
 using System.IO;
 using System.Diagnostics;
+using System.Xml;
+using System.Reflection;
 
 namespace MvxPluginTemplateWizard
 {
@@ -17,7 +19,7 @@ namespace MvxPluginTemplateWizard
         private WizardRunKind _runKind;
         private Dictionary<string, string> _replacementsDictionary;
 
-        // This method is called before opening any item that 
+        // This method is called before opsening any item that 
         // has the OpenInEditor attribute.
         public void BeforeOpeningFile(ProjectItem projectItem)
         {
@@ -27,31 +29,50 @@ namespace MvxPluginTemplateWizard
         {
             if (project.Name == RootWizard.GlobalDictionary["$saferootprojectname$"])
             {
-                // move nuspec to Solution root
-                var projectPath = project.FullName;
-                var projectFi = new FileInfo(projectPath);
-                var nuspecPath = Path.Combine(projectFi.Directory.FullName, "nuspec");
-                var targetPath = Path.Combine(RootWizard.GlobalDictionary["$solutionrootpath$"], "nuspec");                
-                MoveDirectory(nuspecPath, targetPath);
+                moveNuspec(project);
+                RootWizard.GlobalDictionary["$rootprojectpath$"] = project.FullName;
+                RootWizard.GlobalDictionary["$fakerootguid$"] = getGuidFromProject(project.FullName).ToString().ToUpper();
+            }
+        }
 
-                // replaces Project nuspec with links
-                foreach (ProjectItem item in project.ProjectItems)
+        private static void moveNuspec(Project project)
+        {
+            // move nuspec to Solution root
+            var projectPath = project.FullName;
+            var projectFi = new FileInfo(projectPath);
+            var nuspecPath = Path.Combine(projectFi.Directory.FullName, "nuspec");
+            var targetPath = Path.Combine(RootWizard.GlobalDictionary["$solutionrootpath$"], "nuspec");
+            MoveDirectory(nuspecPath, targetPath);
+
+            foreach (ProjectItem item in project.ProjectItems)
+            {
+                try
                 {
-                    try
-                    {
-                        Debug.WriteLine(item.Name);
+                    Debug.WriteLine(item.Name);
 
-                        if (item.Name == "nuspec")
-                        {
-                            item.Delete();
-                            break;
-                        }
+                    if (item.Name == "nuspec")
+                    {
+                        item.Delete();
+                        break;
                     }
-                    catch (Exception ex) {
-                        Debug.WriteLine(ex.Message);
-                    } 
                 }
-            }            
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+            }
+        }
+
+        private static Guid getGuidFromProject(string projectPath)
+        {
+            //// capture the guid
+            var xmlDoc = new XmlDocument();
+            xmlDoc.Load(projectPath);
+            var guidNodes = xmlDoc.GetElementsByTagName("ProjectGuid");
+            if (guidNodes == null || guidNodes.Count == 0)
+                throw new ApplicationException("Unable to capture rootGuid");
+
+            return new Guid(guidNodes[0].InnerText);
         }
 
         public static void MoveDirectory(string source, string target)
@@ -75,7 +96,6 @@ namespace MvxPluginTemplateWizard
                     stack.Push(new Folders(folder, Path.Combine(folders.Target, Path.GetFileName(folder))));
                 }
             }
-            Directory.Delete(source, true);
         }
 
         public class Folders
@@ -99,7 +119,8 @@ namespace MvxPluginTemplateWizard
 
         // This method is called after the project is created.
         public void RunFinished()
-        {            
+        {
+            Debug.WriteLine("Finished run");
         }
 
         // Retrieve global replacement parameters     
@@ -114,6 +135,18 @@ namespace MvxPluginTemplateWizard
             // Add custom parameters.         
             replacementsDictionary.Add("$saferootprojectname$",
                 RootWizard.GlobalDictionary["$saferootprojectname$"]);
+           
+            // maybe need to refresh the guid here
+            if (RootWizard.GlobalDictionary.ContainsKey("$rootprojectpath$"))
+            {
+                if (!RootWizard.GlobalDictionary.ContainsKey("$rootguid$"))
+                {
+                    RootWizard.GlobalDictionary["$rootguid$"] = getGuidFromProject(RootWizard.GlobalDictionary["$rootprojectpath$"]).ToString().ToUpper();
+                }
+
+                replacementsDictionary.Add("$rootguid$",
+                    RootWizard.GlobalDictionary["$rootguid$"]);
+            }
         }
 
         // This method is only called for item templates,

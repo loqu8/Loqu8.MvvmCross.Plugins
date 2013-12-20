@@ -42,6 +42,7 @@ namespace MvxPluginTemplateWizard
         // This method is called after the project is created.
         public void RunFinished()
         {
+            GlobalDictionary.Clear();
         }
 
         // Add global replacement parameters     

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E7E3586-01F2-4D8C-94A1-8EEC2AC6CEF4}</ProjectGuid>
+    <ProjectGuid>{$guid8$}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\$saferootprojectname$\$saferootprojectname$.csproj">
-      <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
+      <Project>{$rootguid$}</Project>
       <Name>$saferootprojectname$ %28$saferootprojectname$\$saferootprojectname$%29</Name>
     </ProjectReference>
   </ItemGroup>
