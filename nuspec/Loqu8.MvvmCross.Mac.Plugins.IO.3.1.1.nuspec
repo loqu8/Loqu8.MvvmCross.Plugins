@@ -13,6 +13,8 @@
 		<tags>mvvm mvvmcross xamarin monodroid monotouch mac</tags>
 		<dependencies>
 		  <dependency id="MvvmCross.HotTuna.Mac.CrossCore" version="3.1.1-beta1" />
+		  <dependency id="Microsoft.Bcl" version="1.1.6" />
+		  <dependency id="Microsoft.Bcl.Async" version="1.0.165" />
 		</dependencies>
 	</metadata>
 	<files>		
