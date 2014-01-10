@@ -233,7 +233,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //     The path parameter is longer than the system-defined maximum length.
         public string GetDirectoryName(string path)
         {
-            return GetDirectoryName(path);
+            return System.IO.Path.GetDirectoryName(path);
         }
         //
         // Summary:
@@ -254,7 +254,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //     path contains one or more of the invalid characters defined in System.IO.System.IO.Path.GetInvalidPathChars().
         public string GetExtension(string path)
         {
-            return GetExtension(path);
+            return System.IO.Path.GetExtension(path);
         }
         //
         // Summary:
@@ -274,7 +274,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //     path contains one or more of the invalid characters defined in System.IO.System.IO.Path.GetInvalidPathChars().
         public string GetFileName(string path)
         {
-            return GetFileName(path);
+            return System.IO.Path.GetFileName(path);
         }
         //
         // Summary:
@@ -293,7 +293,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //     path contains one or more of the invalid characters defined in System.IO.System.IO.Path.GetInvalidPathChars().
         public string GetFileNameWithoutExtension(string path)
         {
-            return GetFileNameWithoutExtension(path);
+            return System.IO.Path.GetFileNameWithoutExtension(path);
         }
 #if !NETFX_CORE
         //
@@ -371,7 +371,7 @@ namespace Loqu8.MvvmCross.Plugins.IO
         //     System.String.Empty was passed to System.IO.Path.
         public string GetPathRoot(string path)
         {
-            return GetPathRoot(path);
+            return System.IO.Path.GetPathRoot(path);
         }
         //
         // Summary:

@@ -33,6 +33,14 @@ namespace IO.Wpf.Tests
         }
 
         [Test]
+        public void GetDirectory([Values (@"C:\Temp", "checkers", @"..\..\")] string path)
+        {
+            var absolute = Path.GetDirectoryName(path);
+            Assert.AreNotEqual(absolute, path);
+            Debug.WriteLine(absolute);
+        }
+
+        [Test]
         public void GetTemp()
         {
             var temp = Path.GetTempPath();
