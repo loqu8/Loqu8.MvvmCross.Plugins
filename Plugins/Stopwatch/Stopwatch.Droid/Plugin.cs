@@ -15,7 +15,7 @@ namespace Loqu8.MvvmCross.Plugins.Stopwatch.Droid
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvxStopwatch>(new MvxStopwatch());
+            Mvx.RegisterType<IMvxStopwatch, MvxStopwatch>();
         }
     }
 }
