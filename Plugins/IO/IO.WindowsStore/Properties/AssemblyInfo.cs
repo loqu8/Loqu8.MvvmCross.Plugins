@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.IO.WindowsStore")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Loqu8")]
 [assembly: AssemblyProduct("IO.WindowsStore")]
 [assembly: AssemblyCopyright("Copyright © 2013 Loqu8. All rights reserved worldwide.")]
 [assembly: AssemblyTrademark("")]

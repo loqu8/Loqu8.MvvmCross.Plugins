@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("Stopwatch.WindowsPhone")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Loqu8")]
 [assembly: AssemblyProduct("Stopwatch.WindowsPhone")]
-[assembly: AssemblyCopyright("Copyright ©  2013 Loqu8")]
+[assembly: AssemblyCopyright("Copyright © 2013 Loqu8. All rights reserved worldwide.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -9,7 +9,7 @@ using Android.App;
 [assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.IO.Droid")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Loqu8")]
 [assembly: AssemblyProduct("Loqu8.MvvmCross.Plugins.IO.Droid")]
 [assembly: AssemblyCopyright("Copyright © 2013 Loqu8. All rights reserved worldwide.")]
 [assembly: AssemblyTrademark("")]

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Stopwatch.WindowsStore")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Loqu8")]
 [assembly: AssemblyProduct("Stopwatch.WindowsStore")]
-[assembly: AssemblyCopyright("Copyright ©  2013 Loqu8")]
+[assembly: AssemblyCopyright("Copyright © 2013 Loqu8. All rights reserved worldwide.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -9,7 +9,7 @@ using System.Resources;
 [assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.IO.WindowsPhone")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Loqu8")]
 [assembly: AssemblyProduct("IO.WindowsPhone")]
 [assembly: AssemblyCopyright("Copyright © 2013 Loqu8. All rights reserved worldwide.")]
 [assembly: AssemblyTrademark("")]

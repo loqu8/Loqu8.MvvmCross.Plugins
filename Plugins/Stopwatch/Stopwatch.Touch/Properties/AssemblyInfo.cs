@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Loqu8.MvvmCross.Plugins.Stopwatch.Touch")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Loqu8")]
 [assembly: AssemblyProduct("Loqu8.MvvmCross.Plugins.Stopwatch.Touch")]
-[assembly: AssemblyCopyright("Copyright ©  2013 Loqu8")]
+[assembly: AssemblyCopyright("Copyright © 2013 Loqu8. All rights reserved worldwide.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
