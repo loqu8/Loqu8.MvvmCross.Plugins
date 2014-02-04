@@ -147,7 +147,8 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions.Phone">
       <HintPath>..\..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\wp8\Microsoft.Threading.Tasks.Extensions.Phone.dll</HintPath>
     </Reference>
-    <Reference Include="System.IO.Compression">
+    <Reference Include="System.IO.Compression, Version=3.9.73.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\Microsoft.Bcl.Compression.3.9.73\lib\wp8\System.IO.Compression.dll</HintPath>
     </Reference>
   </ItemGroup>
