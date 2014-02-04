@@ -33,30 +33,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.Mac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.Mac.3.1.156-beta5\lib\net45\Cirrious.CrossCore.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrious.CrossCore.Mac, Version=1.0.5092.6500, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Cirrious.CrossCore.Mac, Version=1.0.5147.30075, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.Mac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.CrossCore.Mac.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.Mac.3.1.156-beta5\lib\net45\Cirrious.CrossCore.Mac.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.Mac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.Mac.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding.Mac, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.Mac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Binding.Mac.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.Mac.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.Binding.Mac.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.Mac.CrossCore.3.1.131-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.Mac.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net" />
-    <Reference Include="System.Windows">
-      <Private>True</Private>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.Mac.PortableSupport.3.1.131-beta1\lib\net45\System.Windows.dll</HintPath>
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MvvmCross.PortableSupport.Mac.3.1.156-beta5\lib\net45\System.Windows.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -88,9 +83,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\IO\IO.csproj">
       <Project>{90e28404-d2de-4835-8faf-ac2ff05ce6bb}</Project>
       <Name>IO %28Plugins\IO\IO%29</Name>
@@ -98,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MvxMacIO.cs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

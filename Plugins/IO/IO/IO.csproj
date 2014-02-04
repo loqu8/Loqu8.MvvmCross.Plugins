@@ -70,10 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.156-beta5\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.156-beta5\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks">
       <HintPath>..\..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.dll</HintPath>
