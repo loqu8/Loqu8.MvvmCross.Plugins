@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Cryptography.Wpf.
+{
+    public class MvxWpfCryptography : IMvxCryptography
+    {
+        public MvxWpfCryptography()
+        {
+        }
+
+        #region ICryptography
+
+        #endregion ICryptography
+    }
+}

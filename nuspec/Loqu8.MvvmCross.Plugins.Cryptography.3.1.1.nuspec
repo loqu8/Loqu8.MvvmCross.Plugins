@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Loqu8.MvvmCross.Plugins.Cryptography</id>
+		<version>3.1.1-beta1</version>
+		<title>MvvmCross - Cryptography Plugin</title>
+		<authors>E. Timothy Uy</authors>
+		<owners>Loqu8</owners>
+		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+		<projectUrl>https://github.com/loqu8/Loqu8.MvvmCross.Plugins</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Everyone needs a Cryptography...</description>
+		<tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
+		<dependencies>
+		  <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1-beta1" />
+		</dependencies>
+	</metadata>
+	<files>		
+		<!-- PCL -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Cryptography.dll" target="lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Loqu8.MvvmCross.Plugins.Cryptography.dll" />
+
+		<!-- wpf -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Cryptography.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.Cryptography.dll" />
+		<file src="..\bin\Release\Mvx\Wpf\Loqu8.MvvmCross.Plugins.Cryptography.Wpf.dll" target="lib\net45\Loqu8.MvvmCross.Plugins.Cryptography.Wpf.dll" />
+        <file src="BootstrapContent\CryptographyPluginBootstrap.cs.pp" target="content\net45\Bootstrap\CryptographyPluginBootstrap.cs.pp" />
+		
+		<!-- store -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Cryptography.dll" target="lib\netcore45\Loqu8.MvvmCross.Plugins.Cryptography.dll" />
+		<file src="..\bin\Release\Mvx\WindowsStore\Loqu8.MvvmCross.Plugins.Cryptography.WindowsStore.dll" target="lib\netcore45\Loqu8.MvvmCross.Plugins.Cryptography.WindowsStore.dll" />
+        <file src="BootstrapContent\CryptographyPluginBootstrap.cs.pp" target="content\netcore45\Bootstrap\CryptographyPluginBootstrap.cs.pp" />
+        
+		<!-- phone -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Cryptography.dll" target="lib\wp80\Loqu8.MvvmCross.Plugins.Cryptography.dll" />
+		<file src="..\bin\Release\Mvx\WindowsPhone\Loqu8.MvvmCross.Plugins.Cryptography.WindowsPhone.dll" target="lib\wp80\Loqu8.MvvmCross.Plugins.Cryptography.WindowsPhone.dll" />
+        <file src="BootstrapContent\CryptographyPluginBootstrap.cs.pp" target="content\wp80\Bootstrap\CryptographyPluginBootstrap.cs.pp" />
+	
+		<!-- droid -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Cryptography.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.Cryptography.dll" />
+		<file src="..\bin\Release\Mvx\Droid\Loqu8.MvvmCross.Plugins.Cryptography.Droid.dll" target="lib\MonoAndroid\Loqu8.MvvmCross.Plugins.Cryptography.Droid.dll" />
+        <file src="BootstrapContent\CryptographyPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\CryptographyPluginBootstrap.cs.pp" />
+
+		<!-- touch -->
+		<file src="..\bin\Release\Mvx\Portable\Loqu8.MvvmCross.Plugins.Cryptography.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.Cryptography.dll" />
+		<file src="..\bin\Release\Mvx\Touch\Loqu8.MvvmCross.Plugins.Cryptography.Touch.dll" target="lib\MonoTouch\Loqu8.MvvmCross.Plugins.Cryptography.Touch.dll" />
+        <file src="TouchBootstrapContent\CryptographyPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\CryptographyPluginBootstrap.cs.pp" />
+			
+	</files>
+</package>

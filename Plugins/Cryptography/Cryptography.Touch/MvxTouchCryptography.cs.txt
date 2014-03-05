@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Cryptography.Touch
+{
+    public class MvxTouchCryptography : IMvxCryptography
+    {
+        public MvxTouchCryptography()
+        {
+        }
+
+        #region ICryptography
+
+        #endregion ICryptography
+    }
+}

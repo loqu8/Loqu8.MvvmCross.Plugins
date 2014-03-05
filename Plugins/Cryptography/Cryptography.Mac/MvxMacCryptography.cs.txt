@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Cryptography.Mac
+{
+    public class MvxMacCryptography : IMvxCryptography
+    {
+        public MvxMacCryptography()
+        {
+        }
+
+        #region ICryptography
+
+        #endregion ICryptography
+    }
+}

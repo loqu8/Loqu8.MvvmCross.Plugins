@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace Loqu8.MvvmCross.Plugins.Cryptography.Droid
+{
+    public class MvxDroidCryptography : IMvxCryptography
+    {
+        public MvxDroidCryptography()
+        {
+        }
+
+        #region ICryptography
+
+        #endregion ICryptography
+    }
+}
