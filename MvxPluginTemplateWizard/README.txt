@@ -1,4 +1,9 @@
-﻿12/18/2013 TU
+﻿3/5/2014 TU
+May need to add zip file in Visual Studio 2013 if you switch to VS2013.
+To create, create a new folder under plugins, e.g., Encryption, right-click create new project
+For the location, make sure it has the Plugins folder, the "Encryption" folder will be created
+
+12/18/2013 TU
 In order to use the template:
 1. Build MvxPluginTemplateWizard - the wizard goes to C:\Temp\
 2. Go to C:\Temp from an administrator-level command window

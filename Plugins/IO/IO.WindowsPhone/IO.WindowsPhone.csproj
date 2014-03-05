@@ -155,7 +155,7 @@
   <ItemGroup>
     <ProjectReference Include="..\IO\IO.csproj">
       <Project>{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}</Project>
-      <Name>IO %28Plugins\IO\IO%29</Name>
+      <Name>IO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

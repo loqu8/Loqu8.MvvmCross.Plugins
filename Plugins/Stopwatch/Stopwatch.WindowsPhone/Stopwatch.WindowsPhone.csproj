@@ -94,7 +94,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
       <Project>{7411AC3C-A723-4EA8-90A7-B46F6A4D96E9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
+      <Name>Stopwatch</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -92,7 +92,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Stopwatch\Stopwatch.csproj">
       <Project>{7411ac3c-a723-4ea8-90a7-b46f6a4d96e9}</Project>
-      <Name>Stopwatch %28Plugins\Stopwatch\Stopwatch%29</Name>
+      <Name>Stopwatch</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
