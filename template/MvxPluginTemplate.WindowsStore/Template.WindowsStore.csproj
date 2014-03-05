@@ -90,7 +90,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <OutputPath>$(SolutionDir)\bin\Debug\Mvx\WindowsStore\x86\</OutputPath>
+    <OutputPath>$(SolutionDir)\bin\Release\Mvx\WindowsStore\x86\</OutputPath>
     <DefineConstants>TRACE;NETFX_CORE;MVX</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
