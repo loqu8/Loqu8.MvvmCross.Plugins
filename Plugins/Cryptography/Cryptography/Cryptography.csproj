@@ -39,10 +39,32 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMvxCryptography.cs" />
+    <Compile Include="AesManaged.cs" />
+    <Compile Include="CryptographicException.cs" />
+    <Compile Include="DeriveBytes.cs" />
+    <Compile Include="HashAlgorithm.cs" />
+    <Compile Include="HMACSHA1.cs" />
+    <Compile Include="HMACSHA256.cs" />
+    <Compile Include="Adaptation\ICryptographyFactory.cs" />
+    <Compile Include="ICryptoTransform.cs" />
+    <Compile Include="Adaptation\IDeriveBytes.cs" />
+    <Compile Include="Adaptation\IHashAlgorithm.cs" />
+    <Compile Include="Adaptation\IKeyedHashAlgorithm.cs" />
+    <Compile Include="Adaptation\ISymmetricAlgorithm.cs" />
+    <Compile Include="KeyedHashAlgorithm.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Shared Files\MvxCryptography.cs" />
+    <Compile Include="Rfc2898DeriveBytes.cs" />
+    <Compile Include="SHA256Managed.cs" />
+    <Compile Include="SHA1Managed.cs" />
+    <None Include="Shared Files\CryptoServices.cs" />
+    <None Include="Shared Files\CryptoTransformAdapter.cs" />
+    <None Include="Shared Files\HashAlgorithmAdapter.cs" />
+    <None Include="Shared Files\KeyedHashAlgorithmAdapter.cs" />
+    <None Include="Shared Files\Rfc2898DeriveBytesAdapter.cs" />
+    <None Include="Shared Files\SymmetricAlgorithmAdapter.cs" />
+    <Compile Include="SymmetricAlgorithm.cs" />
+    <None Include="Shared Files\CryptographyFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -52,6 +74,7 @@
       <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

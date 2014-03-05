@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3e540895-b381-4073-994f-395e73f9b6d5}</ProjectGuid>
+    <ProjectGuid>{3E540895-B381-4073-994F-395E73F9B6D5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.Cryptography.WindowsStore</RootNamespace>
@@ -101,9 +101,16 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Cryptography\Shared Files\MvxCryptography.cs">
-      <Link>MvxCryptography.cs</Link>
-    </Compile>
+    <Compile Include="Adaptation\CryptographyFactory.cs" />
+    <Compile Include="Adaptation\CryptoTransformAdapter.cs" />
+    <Compile Include="Adaptation\HashAlgorithmAdapter.cs" />
+    <Compile Include="Adaptation\HashCryptoTransformAdapter.cs" />
+    <Compile Include="Adaptation\KeyedHashAlgorithmAdapter.cs" />
+    <Compile Include="Adaptation\Rfc2898DeriveBytesAdapter.cs" />
+    <Compile Include="Adaptation\SymmetricAlgorithmAdapter.cs" />
+    <Compile Include="Adaptation\SymmetricCryptoTransformAdapter.cs" />
+    <Compile Include="Adaptation\SymmetricEncryptorAdapter.cs" />
+    <Compile Include="Adaptation\SymmetricDecryptorAdapter.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

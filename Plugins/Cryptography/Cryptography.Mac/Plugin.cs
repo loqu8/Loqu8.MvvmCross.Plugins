@@ -7,6 +7,7 @@
 
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
+using Loqu8.MvvmCross.Plugins.Cryptography.Adaptation;
 
 namespace Loqu8.MvvmCross.Plugins.Cryptography.Mac
 {
@@ -15,7 +16,7 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography.Mac
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvxCryptography>(new MvxCryptography());
+            Mvx.RegisterSingleton<ICryptographyFactory>(new CryptographyFactory());
             //  Mvx.RegisterSingleton<IMvxCryptography>(new MvxMacCryptography());
         }
     }

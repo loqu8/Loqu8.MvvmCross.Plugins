@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{a8c17a7a-bcd8-42b0-909d-7622752a07f9}</ProjectGuid>
+    <ProjectGuid>{A8C17A7A-BCD8-42B0-909D-7622752A07F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.Cryptography.Mac</RootNamespace>
@@ -59,8 +59,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Cryptography\Shared Files\MvxCryptography.cs">
-      <Link>MvxCryptography.cs</Link>
+    <Compile Include="..\cryptography\shared files\CryptographyFactory.cs">
+      <Link>Adaptation\CryptographyFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cryptography\shared files\CryptoServices.cs">
+      <Link>Adaptation\CryptoServices.cs</Link>
+    </Compile>
+    <Compile Include="..\cryptography\shared files\CryptoTransformAdapter.cs">
+      <Link>Adaptation\CryptoTransformAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\cryptography\shared files\HashAlgorithmAdapter.cs">
+      <Link>Adaptation\HashAlgorithmAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\cryptography\shared files\KeyedHashAlgorithmAdapter.cs">
+      <Link>Adaptation\KeyedHashAlgorithmAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\cryptography\shared files\Rfc2898DeriveBytesAdapter.cs">
+      <Link>Adaptation\Rfc2898DeriveBytesAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\cryptography\shared files\SymmetricAlgorithmAdapter.cs">
+      <Link>Adaptation\SymmetricAlgorithmAdapter.cs</Link>
     </Compile>
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

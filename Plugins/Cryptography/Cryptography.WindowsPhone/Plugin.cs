@@ -8,6 +8,8 @@
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
 
+using Loqu8.MvvmCross.Plugins.Cryptography.Adaptation;
+
 namespace Loqu8.MvvmCross.Plugins.Cryptography.WindowsPhone
 {
     public class Plugin
@@ -15,7 +17,7 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography.WindowsPhone
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvxCryptography>(new MvxCryptography());
+            Mvx.RegisterSingleton<ICryptographyFactory>(new CryptographyFactory());
             //  Mvx.RegisterSingleton<IMvxCryptography>(new MvxWindowsPhoneCryptography());
         }
     }
