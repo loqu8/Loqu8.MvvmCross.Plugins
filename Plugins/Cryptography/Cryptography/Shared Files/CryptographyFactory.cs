@@ -18,17 +18,57 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography.Adaptation
 
         public ISymmetricAlgorithm CreateAesManaged()
         {
-            return new SymmetricAlgorithmAdapter(new System.Security.Cryptography.AesManaged());
+            SymmetricAlgorithmAdapter adapter;
+#if CRYPTSVC
+            try
+            {
+                // prefer os-level encryption for gov't compliance reasons but check support in iOS, etc.
+                adapter = new SymmetricAlgorithmAdapter(new System.Security.Cryptography.AesCryptoServiceProvider());
+            }
+            catch
+            {
+#endif
+                adapter = new SymmetricAlgorithmAdapter(new System.Security.Cryptography.AesManaged());
+#if CRYPTSVC
+            }
+#endif
+            return adapter;
         }
 
         public IHashAlgorithm CreateSha256Managed()
         {
-            return new HashAlgorithmAdapter(new System.Security.Cryptography.SHA256Managed());
+            HashAlgorithmAdapter adapter;
+#if CRYPTSVC
+            try {
+                // prefer os-level encryption for gov't compliance reasons but check support in iOS, etc.
+                adapter = new HashAlgorithmAdapter(new System.Security.Cryptography.SHA256CryptoServiceProvider());
+            }
+            catch {
+#endif
+                adapter = new HashAlgorithmAdapter(new System.Security.Cryptography.SHA256Managed());
+#if CRYPTSVC
+            }
+#endif
+            return adapter;
         }
 
         public IHashAlgorithm CreateSha1Managed()
         {
-            return new HashAlgorithmAdapter(new System.Security.Cryptography.SHA1Managed());
+            HashAlgorithmAdapter adapter;
+#if CRYPTSVC
+            try
+            {
+                // prefer os-level encryption for gov't compliance reasons but check support in iOS, etc.
+                adapter = new HashAlgorithmAdapter(new System.Security.Cryptography.SHA1CryptoServiceProvider());
+            }
+            catch
+            {
+#endif
+                adapter = new HashAlgorithmAdapter(new System.Security.Cryptography.SHA1Managed());
+#if CRYPTSVC
+            }
+#endif
+            return adapter;
         }
 
         public IKeyedHashAlgorithm CreateHMacSha256()
