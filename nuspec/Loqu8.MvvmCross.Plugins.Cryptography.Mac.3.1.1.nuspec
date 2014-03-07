@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>Loqu8.MvvmCross.Mac.Plugins.Cryptography</id>
+		<id>Loqu8.MvvmCross.Plugins.Cryptography.Mac</id>
 		<version>3.1.1-beta1</version>
 		<title>MvvmCross - Mac Cryptography Plugin</title>
 		<authors>E. Timothy Uy</authors>
@@ -9,7 +9,7 @@
 		<licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
 		<projectUrl>https://github.com/loqu8/Loqu8.MvvmCross.Plugins</projectUrl>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
-		<description>Everyone needs a Cryptography...</description>
+		<description>Everyone needs a Cryptography plugin...</description>
 		<tags>mvvm mvvmcross xamarin monodroid monotouch mac</tags>
 		<dependencies>
 		  <dependency id="MvvmCross.HotTuna.Mac.CrossCore" version="3.1.1-beta1" />
