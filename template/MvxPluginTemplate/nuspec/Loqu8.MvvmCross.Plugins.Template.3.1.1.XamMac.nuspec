@@ -12,7 +12,7 @@
 		<description>Everyone needs a $saferootprojectname$ plugin...</description>
 		<tags>mvvm mvvmcross xamarin monodroid monotouch xammac</tags>
 		<dependencies>
-		  <dependency id="MvvmCross.HotTuna.XamMac.CrossCore" version="3.1.1-beta1" />
+		  <dependency id="MvvmCross.HotTuna.CrossCore.XamMac" version="3.1.1-beta1" />
 		</dependencies>
 	</metadata>
 	<files>		

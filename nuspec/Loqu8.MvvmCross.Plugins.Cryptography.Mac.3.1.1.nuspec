@@ -12,7 +12,7 @@
 		<description>Everyone needs a Cryptography plugin...</description>
 		<tags>mvvm mvvmcross xamarin monodroid monotouch mac</tags>
 		<dependencies>
-		  <dependency id="MvvmCross.HotTuna.Mac.CrossCore" version="3.1.1-beta1" />
+		  <dependency id="MvvmCross.HotTuna.CrossCore.Mac" version="3.1.1-beta1" />
 		</dependencies>
 	</metadata>
 	<files>		
