@@ -34,27 +34,19 @@
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.156-beta5\lib\net45\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.176-beta5\lib\net45\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.156-beta5\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.176-beta5\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.CrossCore.3.1.176-beta5\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Test.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.Tests.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.Test.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.156-beta5\lib\net45\Cirrious.MvvmCross.Wpf.dll</HintPath>
+      <HintPath>..\..\..\..\packages\MvvmCross.HotTuna.Tests.3.1.176-beta5\lib\net45\Cirrious.MvvmCross.Test.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
