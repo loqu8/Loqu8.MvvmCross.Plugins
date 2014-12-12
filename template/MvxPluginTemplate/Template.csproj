@@ -10,8 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loqu8.MvvmCross.Plugins.$safeprojectname$</RootNamespace>
     <AssemblyName>Loqu8.MvvmCross.Plugins.$safeprojectname$</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -52,10 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-alpha2\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.1.131-beta1\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-alpha2\lib\portable-win+net45+sl50+wp80+MonoAndroid10+MonoTouch10\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>Loqu8.MvvmCross.Plugins.$saferootprojectname$</id>
-		<version>3.1.1-beta1</version>
+		<version>3.5.0-alpha2</version>
 		<title>MvvmCross - $saferootprojectname$ Plugin</title>
 		<authors>E. Timothy Uy</authors>
 		<owners>Loqu8</owners>
@@ -12,7 +12,7 @@
 		<description>Everyone needs a $saferootprojectname$ plugin...</description>
 		<tags>mvvm mvvmcross xamarin monodroid monotouch wpf windows8 winrt netcore wp wpdev windowsphone</tags>
 		<dependencies>
-		  <dependency id="MvvmCross.HotTuna.CrossCore" version="3.1.1-beta1" />
+		  <dependency id="MvvmCross.HotTuna.CrossCore" version="3.5.0-alpha2" />
 		</dependencies>
 	</metadata>
 	<files>		
