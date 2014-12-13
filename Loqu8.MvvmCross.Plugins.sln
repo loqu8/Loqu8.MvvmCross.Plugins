@@ -224,7 +224,6 @@ Global
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|ARM.ActiveCfg = Release|Any CPU
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|x64.ActiveCfg = Release|Any CPU
 		{72069854-3C43-4FB8-8C7E-19FD4B9A980E}.Release|x86.ActiveCfg = Release|Any CPU
 		{90E28404-D2DE-4835-8FAF-AC2FF05CE6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
