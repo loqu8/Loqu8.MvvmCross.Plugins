@@ -113,15 +113,15 @@
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-alpha2\lib\netcore45\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-beta1\lib\netcore45\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.WindowsStore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-alpha2\lib\netcore45\Cirrious.CrossCore.WindowsStore.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-beta1\lib\netcore45\Cirrious.CrossCore.WindowsStore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-alpha2\lib\netcore45\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>$(SolutionDir)\packages\MvvmCross.HotTuna.CrossCore.3.5.0-beta1\lib\netcore45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

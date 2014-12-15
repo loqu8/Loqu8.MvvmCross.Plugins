@@ -33,24 +33,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-alpha2\lib\net45\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-beta1\lib\net45\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Mac, Version=1.0.5182.25379, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-alpha2\lib\net45\Cirrious.CrossCore.Mac.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-beta1\lib\net45\Cirrious.CrossCore.Mac.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-alpha2\lib\net45\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-beta1\lib\net45\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding.Mac, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-alpha2\lib\net45\Cirrious.MvvmCross.Binding.Mac.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-beta1\lib\net45\Cirrious.MvvmCross.Binding.Mac.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-alpha2\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.HotTuna.Mac.CrossCore.3.5.0-beta1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MvvmCross.Mac.PortableSupport.3.5.0-alpha2\lib\net45\System.Windows.dll</HintPath>
+      <HintPath>..\..\..\packages\MvvmCross.Mac.PortableSupport.3.5.0-beta1\lib\net45\System.Windows.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
