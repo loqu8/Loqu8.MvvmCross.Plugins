@@ -36,6 +36,11 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography.Adaptation
             set { CryptoServices.TranslateExceptions(() => _underlyingAlgorithm.Key = value); }
         }
 
+        public void GenerateIV()
+        {
+            _underlyingAlgorithm.GenerateIV();
+        }
+
         public int KeySize
         {
             get { return _underlyingAlgorithm.KeySize; }

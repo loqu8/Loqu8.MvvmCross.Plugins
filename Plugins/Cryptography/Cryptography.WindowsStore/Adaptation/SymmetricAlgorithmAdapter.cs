@@ -7,6 +7,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Security.Cryptography;
 using Windows.Security.Cryptography.Core;
 using Windows.Storage.Streams;
 
@@ -38,13 +39,19 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography.Adaptation
             set { _iv = value; }
         }
 
+		public void GenerateIV()
+		{
+			var buffer = CryptographicBuffer.GenerateRandom(_provider.BlockLength);
+			IV = buffer.ToArray();
+		}
+
         public ICryptoTransform CreateEncryptor(byte[] key, byte[] iv)
         {
             if (key == null)
                 throw new ArgumentNullException("key");
 
-            if (iv == null)
-                throw new ArgumentNullException("iv");
+			if (iv == null)
+				GenerateIV();
 
             return new SymmetricEncryptorAdapter(_provider, key, iv);
         }

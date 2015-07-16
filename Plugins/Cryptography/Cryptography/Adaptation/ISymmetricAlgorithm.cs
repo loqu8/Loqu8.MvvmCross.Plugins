@@ -21,6 +21,8 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography.Adaptation
             set;
         }
 
+        void GenerateIV();
+
         ICryptoTransform CreateEncryptor(byte[] key, byte[] iv);
         ICryptoTransform CreateDecryptor(byte[] key, byte[] iv);
     }
