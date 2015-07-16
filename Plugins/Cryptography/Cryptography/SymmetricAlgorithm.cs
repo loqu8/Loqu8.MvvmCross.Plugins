@@ -64,6 +64,11 @@ namespace Loqu8.MvvmCross.Plugins.Cryptography
             set { _underlyingAlgorithm.Key = value; }
         }
 
+        public void GenerateIV()
+        {
+            _underlyingAlgorithm.GenerateIV();
+        }
+        
         /// <summary>
         ///     Creates a symmetric encryptor object with the current <see cref="Key"/> and initialization vector (<see cref="IV"/>).
         /// </summary>
